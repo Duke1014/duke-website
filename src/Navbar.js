@@ -7,6 +7,18 @@ export default function Navbar() {
             <NavLink to='/'>
                 Home
             </NavLink>
+            <NavLink to='/music'>
+                Music
+            </NavLink>
+            <NavLink to='/devwork'>
+                Code Projects
+            </NavLink>
+            <NavLink to='/gallery'>
+                Gallery
+            </NavLink>
+            <NavLink to='/contact'>
+                Contact
+            </NavLink>
         </nav>
     )
 }
