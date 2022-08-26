@@ -10,6 +10,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 function App() {
   return (
     <BrowserRouter>
+    A long picture of Duke.
+    <br/>
     <Navbar />
       <Routes>
         <Route path='/' element={ <Home /> } />
