@@ -19,3 +19,7 @@ li a {
   text-align: center;
   padding: 4px 16px;
 }
+
+li a:hover {
+  background-color: navy;
+}
