@@ -5,13 +5,13 @@ import Gallery from './Gallery';
 import Music from './Music';
 import Navbar from './Navbar';
 import Contact from './Contact';
+import Banner from './Banner';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
     <BrowserRouter>
-    A long picture of Duke.
-    <br/>
+    <Banner />
     <Navbar />
       <Routes>
         <Route path='/' element={ <Home /> } />

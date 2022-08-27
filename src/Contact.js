@@ -2,6 +2,11 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+        LinkedIn
+        GitHub
+        Twitter
+        Email
+    </div>
   )
 }
