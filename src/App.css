@@ -23,3 +23,12 @@ li a {
 li a:hover {
   background-color: navy;
 }
+
+p {
+  /* float: left; */
+  width: 40%;
+}
+
+a img {
+  border: 1px solid #555;
+}
