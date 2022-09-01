@@ -12,7 +12,10 @@ export default function Navbar() {
                     <a><NavLink to='/music'>Music</NavLink></a>
                 </li>
                 <li>
-                    <a><NavLink to='/devwork'>Code Projects</NavLink></a>
+                    <a><NavLink to='/devwork'>Projects</NavLink></a>
+                </li>
+                <li>
+                    <a><NavLink to='/games'>Games</NavLink></a>
                 </li>
                 <li>
                     <a><NavLink to='/gallery'>Gallery</NavLink></a>
