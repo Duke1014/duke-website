@@ -25,7 +25,7 @@ export default function DevWork() {
             <a href='https://rails-project-soundboard.herokuapp.com/'><img src={Soundboard} alt='Soundboard' /></a>
             <h4>Ruby on Rails / React with User Authentification</h4>
             <p>
-                My Phase 4 project for Flatiron School. This project was to be the framework of a soundboard with user authentification. While sharing sound on Zoom, one could theoretically use the soundboard to heighten an online event.
+                My Phase 4 project for Flatiron School. This project is the framework of a soundboard with user authentification. While sharing sound on Zoom, one could theoretically use the soundboard to heighten an online event.
             </p>
         </div>
     </div>
