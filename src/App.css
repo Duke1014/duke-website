@@ -21,7 +21,7 @@ li a {
 }
 
 li a:hover {
-  background-color: navy;
+  background-color: rgb(125, 125, 125);
 }
 
 p {
@@ -31,4 +31,10 @@ p {
 
 a img {
   border: 1px solid #555;
+}
+
+.banner {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: aquamarine;
+  padding: 0%;
 }

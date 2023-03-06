@@ -6,22 +6,22 @@ export default function Navbar() {
         <nav>
             <ul>
                 <li>
-                    <a><NavLink to='/'>Home</NavLink></a>
+                    <NavLink to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <a><NavLink to='/music'>Music</NavLink></a>
+                    <NavLink to='/music'>Music</NavLink>
                 </li>
                 <li>
-                    <a><NavLink to='/devwork'>Projects</NavLink></a>
+                    <NavLink to='/devwork'>Projects</NavLink>
                 </li>
                 <li>
-                    <a><NavLink to='/games'>Games</NavLink></a>
+                    <NavLink to='/games'>Games</NavLink>
                 </li>
                 <li>
-                    <a><NavLink to='/gallery'>Gallery</NavLink></a>
+                    <NavLink to='/gallery'>Gallery</NavLink>
                 </li>
                 <li>
-                    <a><NavLink to='/contact'>Contact</NavLink></a>
+                    <NavLink to='/contact'>Contact</NavLink>
                 </li>
             </ul>   
         </nav>
