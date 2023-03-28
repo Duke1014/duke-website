@@ -13,7 +13,7 @@ function App() {
   return (
     // <BrowserRouter> 
     <div>
-      <Banner />
+      {/* <Banner /> */}
       <Navbar />
       <Home />
     </div>

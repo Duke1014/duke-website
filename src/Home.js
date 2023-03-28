@@ -10,7 +10,7 @@ import Soundboard from './img/Soundboard.png'
 
 export default function Home() {
   return (
-    <div>
+    <div className='home'>
         <div className='projects'>
           <div className='to-do-list'>
               <h2>To-Do List</h2>

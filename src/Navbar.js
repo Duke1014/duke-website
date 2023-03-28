@@ -4,41 +4,59 @@ import React from 'react'
 export default function Navbar() {
     return (
         <nav>
-            <ul>
+            <div className='my-name'>
+                Duke Norsworthy
+            </div>
+            <div className='start'>
+                Start
+            </div>
+            <div className='dev-work'>
+                Dev Work
+            </div>
+            <div className='music'>
+                Music
+            </div>
+            <div className='about'>
+                About
+            </div>
+            <div className='contact'>
+                Contact
+            </div>
+            {/* <ul>
                 <li className='nav-name'>
                     Duke Norsworthy
                 </li>
-                <li className='nav-home'>
+                <li className='nav-home'> */}
                     {/* <NavLink to='/'> */}
-                        Home
+                        {/* Home */}
                     {/* </NavLink> */}
-                </li>
-                <li className='nav-music'>
+                {/* </li>
+                <li className='nav-music'> */}
                     {/* <NavLink to='/music'> */}
-                        Music
+                        {/* Music */}
                     {/* </NavLink> */}
-                </li>
-                <li className='nav-projects'>
+                {/* </li>
+                <li className='nav-projects'> */}
                     {/* <NavLink to='/devwork'> */}
-                        Projects
+                        {/* Projects */}
                     {/* </NavLink> */}
-                </li>
-                <li className='nav-games'>
+                {/* </li>
+                <li className='nav-games'> */}
                     {/* <NavLink to='/games'> */}
-                        Games
+                        {/* Games */}
                     {/* </NavLink> */}
-                </li>
-                <li className='nav-gallery'>
+                {/* </li>
+                <li className='nav-gallery'> */}
                     {/* <NavLink to='/gallery'> */}
-                        Gallery
+                        {/* Gallery */}
                     {/* </NavLink> */}
-                </li>
-                <li className='nav-contact'>
+                {/* </li>
+                <li className='nav-contact'> */}
                     {/* <NavLink to='/contact'> */}
-                        Contact
+                        {/* Contact */}
                     {/* </NavLink> */}
-                </li>
-            </ul>   
+                {/* </li> */}
+            {/* </ul>    */}
         </nav>
     )
 }

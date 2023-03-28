@@ -10,12 +10,7 @@ code {
 
 /* navbar */
 
-.nav-name {
-  float: left;
-  width: 20%;
-}
-
-ul {
+/* ul {
   border: 1px solid #555;
   background-color: #ffffff;
   overflow: hidden;
@@ -23,38 +18,73 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+} */
 
-li {
+/* li {
   float: left;
-}
+} */
 
-li a {
+/* li a {
   display: block;
   color: white;
   text-decoration: none;
   text-align: center;
   padding: 4px 16px;
-}
+} */
 
-li a:hover {
+/* li a:hover {
   background-color: rgb(125, 125, 125);
-}
+} */
 
 /* /////// */
 
 
-p {
+/* p { */
   /* float: left; */
-  width: 40%;
-}
+  /* width: 40%; */
+/* } */
 
-a img {
+/* a img {
   border: 1px solid #555;
-}
+} */
 
-.banner {
+/* .banner {
   font-family: 'Times New Roman', Times, serif;
   background-color: aquamarine;
   padding: 0%;
+} */
+
+.home {
+  position: relative;
+}
+
+nav {
+  position: sticky;
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 0%;
+  margin: 0;
+}
+
+.my-name {
+  float: left;
+  display: block;
+  font-size: x-large;
+  /* padding: 1%; */
+}
+
+.start,
+.dev-work,
+.music,
+.about,
+.contact {
+  float: right;
+  display: block;
+  /* padding: 1%; */
+  font-size: larger;
 }
