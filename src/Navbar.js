@@ -7,20 +7,22 @@ export default function Navbar() {
             <div className='my-name'>
                 Duke Norsworthy
             </div>
-            <div className='start'>
-                Start
-            </div>
-            <div className='dev-work'>
-                Dev Work
-            </div>
-            <div className='music'>
-                Music
-            </div>
-            <div className='about'>
-                About
-            </div>
-            <div className='contact'>
-                Contact
+            <div className='nav-items'>
+                <div className='start'>
+                    Start
+                </div>
+                <div className='dev-work'>
+                    Dev-Work
+                </div>
+                <div className='music'>
+                    Music
+                </div>
+                <div className='about'>
+                    About
+                </div>
+                <div className='contact'>
+                    Contact
+                </div>
             </div>
             {/* <ul>
                 <li className='nav-name'>

@@ -7,11 +7,13 @@ import gmail from './img/gmail.png'
 // import twitter from './img/twitter.png'
 import ToDoList from './img/ToDoList.png'
 import Soundboard from './img/Soundboard.png'
+import Start from './Start'
 
 export default function Home() {
   return (
     <div className='home'>
-        <div className='projects'>
+      <Start />
+        {/* <div className='projects'>
           <div className='to-do-list'>
               <h2>To-Do List</h2>
               <a href='https://to-do-list-capstone.herokuapp.com/'>
@@ -35,11 +37,11 @@ export default function Home() {
                   My Phase 4 project for Flatiron School. This project is the framework of a soundboard with user authentification. While sharing sound on Zoom, one could theoretically use the soundboard to heighten an online event.
               </p>
           </div>
-        </div>
-        <div className='music'>
+        </div> */}
+        {/* <div className='music'>
           <a href='https://youtu.be/YS1Gb2ygeU4'>Duke with Randall Piper at the Sterling Renaissance Festival</a>
-        </div>
-        <div className='games'>
+        </div> */}
+        {/* <div className='games'>
           <div className='shards-of-dalaya'>
               <h2>Shards of Dalaya</h2>
               <a href='https://shardsofdalaya.com/'>
@@ -48,11 +50,11 @@ export default function Home() {
               <h4>A free Emulated Everquest server (EQEmu), with hundreds of hours of unique content, story, and loot. (Lua/C++)</h4>
               <p>Since 2005, My family and I had played Shards of Dalaya on and off with friends all over the world. Eventually, I had made friends with one of the developers, who was kind enough to take me under their wing for programming quests and monsters in the game in 2018, giving me the start in my career as a developer. If you see the elusive, powerful Spiny Mole, be sure to say hi to him for me!</p>
           </div>
-        </div>
-        <div className='gallery'>
+        </div> */}
+        {/* <div className='gallery'>
           <div>Gallery :)</div>
-        </div>
-        <div className='contact'>
+        </div> */}
+        {/* <div className='contact'>
           <div>
             <a href='https://www.linkedin.com/in/brett-duke-norsworthy/'>
               <img src={linkedIn} alt='LinkedIn'/>
@@ -64,15 +66,15 @@ export default function Home() {
               <img src={github} alt='GitHub'/>
             </a>
             GitHub
-          </div> 
+          </div>  */}
           {/* <div><img src={twitter} alt='Twitter'/>Twitter</div>  */}
-          <div>
+          {/* <div>
             <a href = "mailto: duke.norsworthy@gmail.com">
               <img src={gmail} alt="Email"/>
             </a>
             Email
           </div>  
-        </div>
+        </div> */}
     </div>
   )
 }
