@@ -8,7 +8,7 @@ export default function Navbar() {
                 Duke Norsworthy
             </div>
             <div className='nav-items'>
-                <div className='start'>
+                <div className='start-nav'>
                     Start
                 </div>
                 <div className='dev-work'>

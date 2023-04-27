@@ -1,58 +1,13 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  /* background-color: blue; */
+  background-color: rgba(3,13,34,255);;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-/* navbar */
-
-/* ul {
-  border: 1px solid #555;
-  background-color: #ffffff;
-  overflow: hidden;
-  position: sticky;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-} */
-
-/* li {
-  float: left;
-} */
-
-/* li a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  padding: 4px 16px;
-} */
-
-/* li a:hover {
-  background-color: rgb(125, 125, 125);
-} */
-
-/* /////// */
-
-
-/* p { */
-  /* float: left; */
-  /* width: 40%; */
-/* } */
-
-/* a img {
-  border: 1px solid #555;
-} */
-
-/* .banner {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: aquamarine;
-  padding: 0%;
-} */
 
 .home {
   position: relative;
@@ -63,15 +18,19 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 50px;
-  border: 1px solid black;
-  background-color: white;
+  width: auto;
+  height: 3rem;
+  border-bottom: 0px solid rgb(90, 245, 250);
+  background-color: rgba(3,13,34,255);
   top: 0;
   left: 0;
   z-index: 999;
   padding: 0%;
   margin: 0;
+  animation: name-slide 5s forwards;
+  animation-delay: 3s;
+  top: -15rem;
+  position: relative;
 }
 
 .my-name {
@@ -86,7 +45,7 @@ nav {
   display: flex;
 }
 
-.start,
+.start-nav,
 .dev-work,
 .music,
 .about,
@@ -96,3 +55,51 @@ nav {
   /* padding: 1%; */
   font-size: larger;
 }
+
+.slide-in {
+  position: relative;
+  left: -1000px; 
+  animation: slide-in 1.5s forwards;
+}
+
+.slide-in:nth-child(2) {
+  animation-delay: 1.5s; 
+}
+
+@keyframes slide-in {
+  0% {
+    left: -1000px; 
+  }
+  100% {
+    left: 0; 
+  }
+}
+
+.start {
+  /* text-align: center;  */
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  height: 90vh;
+  /* align-items: center;  */
+}
+
+.start-one, .start-two {
+  text-indent: 1rem;
+}
+
+@keyframes name-slide {
+  0% {
+    top: -15rem;
+    border-bottom: 0px solid rgb(90, 245, 250);
+  }
+  40% {
+    top: 0;
+    border-bottom: 0px solid rgb(90, 245, 250);
+  }
+  100% {
+    top: 0;
+    border-bottom: 1px solid rgb(90, 245, 250);
+  }
+}
+
