@@ -5,7 +5,7 @@ import Home from './Home';
 // import Music from './Music';
 import Navbar from './Navbar';
 // import Contact from './Contact';
-import Banner from './Banner';
+// import Banner from './Banner';
 // import Games from './Games';
 // import { BrowserRouter, Routes, Route } from "react-router-dom"
 

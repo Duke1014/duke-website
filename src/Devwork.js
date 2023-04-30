@@ -9,6 +9,8 @@ export default function Devwork() {
         </div>
         <div id='shards-of-dalaya'>
             Shards of Dalaya (EQEmu)
+            <p>Shards of Dalaya is an emulated EverQuest Server</p>
+            {/* https://shardsofdalaya.com/ */}
         </div>
         <div id='to-do-list'>
             To-Do List
