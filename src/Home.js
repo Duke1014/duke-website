@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import ShardsOfDalaya from './img/ShardsOfDalaya.png'
 import linkedIn from './img/linkedin.png'
@@ -8,11 +8,28 @@ import gmail from './img/gmail.png'
 import ToDoList from './img/ToDoList.png'
 import Soundboard from './img/Soundboard.png'
 import Start from './Start'
+import Devwork from './Devwork'
 
 export default function Home() {
+
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsVisible(true)
+    }, 5000)
+
+    return () => clearTimeout(timeout);
+  }, [])
+
+
   return (
     <div className='home'>
       <Start />
+      {isVisible ? <>
+        <Devwork />
+      </> : <></>}
+      
         {/* <div className='projects'>
           <div className='to-do-list'>
               <h2>To-Do List</h2>

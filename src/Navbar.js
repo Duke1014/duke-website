@@ -11,18 +11,17 @@ export default function Navbar() {
                 <div className='start-nav'>
                     Start
                 </div>
-                <div className='dev-work'>
+                <div className='dev-work-nav'>
                     Dev-Work
                 </div>
-                <div className='music'>
+                <div className='music-nav'>
                     Music
                 </div>
-                <div className='about'>
+                <div className='about-nav'>
                     About
                 </div>
-                <div className='contact'>
-                    Contact
-                </div>
+                <div className='contact-nav'>
+                    Contact  </div>
             </div>
             {/* <ul>
                 <li className='nav-name'>
