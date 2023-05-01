@@ -4,25 +4,36 @@ import React from 'react'
 export default function Navbar() {
     return (
         <nav>
-            <div className='my-name'>
+            <a className='my-name'>
                 Duke Norsworthy
-            </div>
-            <div className='nav-items'>
-                <div className='start-nav'>
-                    Start
-                </div>
-                <div className='dev-work-nav'>
-                    Dev-Work
-                </div>
-                <div className='music-nav'>
-                    Music
-                </div>
-                <div className='about-nav'>
-                    About
-                </div>
-                <div className='contact-nav'>
-                    Contact  </div>
-            </div>
+            </a>
+            <ul className='nav-items'>
+                <li>
+                    <a className='start-nav'>
+                        Start
+                    </a>
+                </li>
+                <li>
+                    <a className='dev-work-nav'>
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a className='music-nav'>
+                        Music
+                    </a>
+                </li>
+                <li>
+                    <a className='about-nav'>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a className='contact-nav'>
+                        Contact  
+                    </a>
+                </li>
+            </ul>
             {/* <ul>
                 <li className='nav-name'>
                     Duke Norsworthy

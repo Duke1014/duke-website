@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background-color: rgba(3,13,34,255);;
   color: white;
-  text-indent: 1rem;
+  /* text-indent: 1rem; */
 }
 
 code {
@@ -63,7 +63,7 @@ nav {
 
 .slide-in {
   position: relative;
-  left: -1000px; 
+  left: -100rem; 
   animation: slide-in 1.5s forwards;
 }
 
@@ -73,7 +73,7 @@ nav {
 
 @keyframes slide-in {
   0% {
-    left: -1000px; 
+    left: -100rem; 
   }
   100% {
     left: 0; 
@@ -107,6 +107,7 @@ nav {
   animation: dev-slide 1s forwards;
   /* animation-delay: 4.5s; */
   opacity: 0;
+  padding: 1rem;
 }
 
 @keyframes dev-slide {
@@ -135,4 +136,28 @@ nav {
   100% {
     opacity: 0;
   }
+}
+
+.project-card {
+  border: 1px solid white;
+  padding-bottom: 1rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.project-card-info {
+  animation: dev-slide 1s forwards;
+  opacity: 0;
+}
+
+p, h3, a {
+  margin-inline: 1rem;
+}
+
+h3 {
+  font-weight: 420;
+}
+
+.nav-items li {
+  display: block;
 }
