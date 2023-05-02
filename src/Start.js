@@ -1,5 +1,5 @@
 import React from 'react'
-import arrow from './img/arrow.png'
+// import arrow from './img/arrow.png'
 
 export default function Start() {
     return (
