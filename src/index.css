@@ -185,6 +185,9 @@ h3 {
   width: 14rem;
   height: 4rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .expanded-card img, .expanded-card p{
@@ -219,4 +222,8 @@ h3 {
   100% {
     opacity: 1;
   }
+}
+
+.project-card-info-bottom {
+  margin-top: auto;
 }
