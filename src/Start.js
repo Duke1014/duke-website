@@ -11,12 +11,18 @@ export default function Start() {
             </div>
             <div className='slide-in start-two'>
                 <h3>
-                    I am a software engineer, musician, and game developer.
+                    I am a software engineer, game developer, and musician.
                 </h3>
             </div>
             {/* <div className='arrow'>
               <img src={arrow} alt='arrow' />
             </div> */}
+            <div className='slide-in start-three'>
+                <p>
+                lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff lorem ipsum and stuff 
+
+                </p>
+            </div>
         </div>
     )
 }
