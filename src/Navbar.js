@@ -4,34 +4,34 @@ import React from 'react'
 export default function Navbar() {
     return (
         <nav>
-            <a className='my-name'>
+            <span className='my-name'>
                 Duke Norsworthy
-            </a>
+            </span>
             <ul className='nav-items'>
                 <li>
-                    <a className='start-nav'>
+                    <span className='start-nav'>
                         Start
-                    </a>
+                    </span>
                 </li>
                 <li>
-                    <a className='dev-work-nav'>
+                    <span className='dev-work-nav'>
                         Projects
-                    </a>
+                    </span>
                 </li>
                 <li>
-                    <a className='music-nav'>
+                    <span className='music-nav'>
                         Music
-                    </a>
+                    </span>
                 </li>
                 <li>
-                    <a className='about-nav'>
+                    <span className='about-nav'>
                         About
-                    </a>
+                    </span>
                 </li>
                 <li>
-                    <a className='contact-nav'>
+                    <span className='contact-nav'>
                         Contact  
-                    </a>
+                    </span>
                 </li>
             </ul>
             {/* <ul>

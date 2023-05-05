@@ -60,10 +60,52 @@ nav {
   padding-right: 1rem;
 }
 
+/* BEGINNING OF START COMPONENT */ 
+
+.start {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  height: 95vh;
+  flex-wrap: wrap; 
+  width: 50%;    
+  margin-left: 10rem;
+}
+
+.start-one {
+  font-size: xxx-large;
+}
+
+.start-two {
+  font-size: large;
+}
+
+.start-img img {
+  width: 2rem;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-left: 1rem;
+}
+
+/* @keyframes unhide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
 .slide-in {
   position: relative;
-  left: -100rem; 
+  left: -200rem; 
   animation: slide-in 1.5s forwards;
+}
+
+.slide-in h3, .slide-in p {
+  margin: 0;
+  margin-bottom: 1rem;
+  height: 100%;
 }
 
 .slide-in:nth-child(2) {
@@ -76,31 +118,36 @@ nav {
 
 @keyframes slide-in {
   0% {
-    left: -100rem; 
+    left: -200rem; 
   }
   100% {
     left: 0; 
   }
 }
 
-.start {
-  /* text-align: center;  */
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  height: 90vh;
-  font-size: xx-large;
-  align-items: center;
-  flex-wrap: wrap; 
+.start-software-engineer, .start-game-developer, .start-musician {
+  color: rgb(0, 255, 149)
+}
+
+.start-software-engineer:hover, .start-game-developer:hover, .start-musician:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.invisible {
+  opacity: 0 !important;
+  /* transition: opacity 0.5s ease-out; */
 }
 
 /* .start-one, .start-two {
   text-indent: 1rem;
 } */
 
+/* END OF START COMPONENT */ 
+
 @keyframes name-slide {
   0% {
-    top: -15rem;
+    top: -25rem;
     position: relative;
   }
   99%{
