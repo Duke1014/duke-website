@@ -125,7 +125,7 @@ export default function StartImages({ hoveredText }) {
     }   
 
     return (
-        <div>
+        <div className='phase-in'>
             {images}
         </div>
     )

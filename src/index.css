@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-color: rgba(3,13,34,255);;
+  background-color: rgba(3,13,34,255);
   color: white;
   /* text-indent: 1rem; */
 }
@@ -40,6 +40,21 @@ nav {
   /* padding: 1%; */
 }
 
+@keyframes name-slide {
+  0% {
+    top: -25rem;
+    position: relative;
+  }
+  99%{
+    top: 0;
+    position: relative;
+  }
+  100% {
+    top: 0;
+    position: sticky;
+  }
+}
+
 .nav-items {
   float: right;
   display: flex;
@@ -68,8 +83,14 @@ nav {
   justify-content: center; 
   height: 95vh;
   flex-wrap: wrap; 
-  width: 50%;    
-  margin-left: 10rem;
+  /* width: 50%;     */
+  margin-left: 5rem;
+  /* margin-right: 20rem; */
+  width: 70vw;
+}
+
+.start-one, .start-two, .start-img {
+  width: 40rem;
 }
 
 .start-one {
@@ -130,7 +151,6 @@ nav {
 }
 
 .start-software-engineer:hover, .start-game-developer:hover, .start-musician:hover {
-  cursor: pointer;
   text-decoration: underline;
 }
 
@@ -139,26 +159,49 @@ nav {
   /* transition: opacity 0.5s ease-out; */
 }
 
+.phase-in, .my-image {
+  animation: phase-in 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@keyframes phase-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* .start-one, .start-two {
   text-indent: 1rem;
 } */
 
+.my-image-container {
+  display: flex; 
+  align-items: center;
+  margin-left: 1rem;
+  position: relative;
+  width: 10rem;
+  height: 100%;
+
+}
+
+.my-image {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  position: absolute;
+  width: 15rem;
+  border-radius: 10rem;
+  float: right;
+}
+
+
 /* END OF START COMPONENT */ 
 
-@keyframes name-slide {
-  0% {
-    top: -25rem;
-    position: relative;
-  }
-  99%{
-    top: 0;
-    position: relative;
-  }
-  100% {
-    top: 0;
-    position: sticky;
-  }
-}
+/* BEGIN PROJECTS */
 
 .devwork {
   animation: dev-slide 1s forwards;
@@ -166,9 +209,52 @@ nav {
   opacity: 0;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(5, min-content);
+  grid-template-columns: repeat(3, min-content);
   grid-gap: 1rem;
-  height: 55vh;
+  /* height: 55vh; */
+}
+
+.project-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1rem;
+  /* height: 55vh; */
+}
+
+.project-buttons {
+  margin-left: 4rem;
+  position: absolute;
+}
+
+.project-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.project-button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 255, 149);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.project-button {
+  display: inline-block;
+  position: relative;
+  color: rgb(0, 255, 149);
+  margin-right: 1rem;
+}
+
+.project-button:hover {
+  cursor: pointer;
 }
 
 @keyframes dev-slide {
@@ -180,36 +266,23 @@ nav {
   }
 }
 
-.arrow img {
-  width: 10rem;
-  animation: phase 2s infinite;
-  animation-delay: 5s;
-  opacity: 0;
-}
-
-@keyframes phase {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .project-card {
   border: 1px solid white;
+  border-radius: 0.5rem;
   padding-bottom: 1rem;
-  width: 14rem;
-  height: 4rem;
+  width: 30vw;
+  margin-inline-start: 5vh; 
+  box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3)
 }
 
-.project-card:hover {
-  border: 1px solid rgb(0, 247, 255);
-  cursor: pointer;
+.project-card img {
+  width: 28vw;
+  margin-left: 1vw;
 }
+
+/* .project-card:hover {
+  border: 1px solid rgb(0, 247, 255);
+} */
 
 .project-card-info {
   animation: dev-slide 1s forwards;
@@ -232,50 +305,25 @@ h3 {
   display: block;
 }
 
-.expanded-card {
-  animation: expand-card 1s forwards;
-  width: 14rem;
-  height: 4rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+button {
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgba(3,13,34,255);
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
-.expanded-card img, .expanded-card p{
-  opacity: 0;
-  animation: expand-card-two 1s forwards;
-  animation-delay: 1s;
+button a {
+  text-decoration: none;
 }
 
-.expanded-card img {
-  width: 10rem;
-  top: 0;
-  right: 0;
-  /* border: 1px solid white; */
-  position: absolute;
-}
+/* button a:hover {
+  color: rgb(0, 247, 255);
+} */
 
-@keyframes expand-card {
-  0% {
-    width: 14rem;
-    height: 4rem;
-  }
-  100% {
-    width: 25rem;
-    height: 30rem;
-  }
-}
-
-@keyframes expand-card-two {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.project-card-info-bottom {
-  margin-top: auto;
+button:hover {
+  color: rgb(0, 247, 255);
+  border-color: rgb(0, 247, 255);
+  font-size: 100%;
 }
