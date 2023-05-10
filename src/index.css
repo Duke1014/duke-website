@@ -37,6 +37,7 @@ nav {
   float: left;
   display: flex;
   font-size: x-large;
+  margin-left: 1rem
   /* padding: 1%; */
 }
 
@@ -71,6 +72,14 @@ nav {
   font-size: larger;
 }
 
+.start-nav:hover,
+.dev-work-nav:hover,
+.music-nav:hover,
+.about-nav:hover,
+.contact-nav:hover {
+  cursor: pointer;
+}
+
 .contact-nav {
   padding-right: 1rem;
 }
@@ -83,9 +92,7 @@ nav {
   justify-content: center; 
   height: 95vh;
   flex-wrap: wrap; 
-  /* width: 50%;     */
   margin-left: 5rem;
-  /* margin-right: 20rem; */
   width: 70vw;
 }
 
@@ -93,12 +100,8 @@ nav {
   width: 40rem;
 }
 
-.start-one {
-  font-size: xxx-large;
-}
-
-.start-two {
-  font-size: large;
+.start-one .start-two {
+  font-size: xx-large;
 }
 
 .start-img img {
@@ -107,15 +110,6 @@ nav {
   transition: opacity 0.5s ease-out;
   margin-left: 1rem;
 }
-
-/* @keyframes unhide {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
 
 .slide-in {
   position: relative;
@@ -147,11 +141,13 @@ nav {
 }
 
 .start-software-engineer, .start-game-developer, .start-musician {
-  color: rgb(0, 255, 149)
+  color: rgb(0, 255, 149);
+  font-size: 4rem;
 }
 
 .start-software-engineer:hover, .start-game-developer:hover, .start-musician:hover {
-  text-decoration: underline;
+  font-size: 4rem;
+  transition: font-size 0.75s ease-in-out;
 }
 
 .invisible {
@@ -198,6 +194,9 @@ nav {
   float: right;
 }
 
+.about-start {
+  position: relative;
+}
 
 /* END OF START COMPONENT */ 
 
@@ -218,13 +217,13 @@ nav {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 30vw);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-rows: repeat(3, 1fr); */
   grid-gap: 1rem;
   /* height: 55vh; */
 }
 
 .project-buttons {
-  margin-left: 4rem;
+  margin-left: 2rem;
   position: absolute;
 }
 
@@ -271,7 +270,7 @@ nav {
   border-radius: 0.5rem;
   padding-bottom: 1rem;
   width: 30vw;
-  margin-inline-start: 5vh; 
+  margin-inline-start: 2vh; 
   box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3)
 }
 
@@ -327,3 +326,4 @@ button:hover {
   border-color: rgb(0, 247, 255);
   font-size: 100%;
 }
+

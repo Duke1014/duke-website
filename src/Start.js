@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import StartImages from './StartImages'
 
 import gremlin from './img/a gremlin.jpg'
@@ -19,28 +19,44 @@ export default function Start() {
         console.log('off')
     }
 
+    let age = null
+    let birth = new Date("1996-10-14")
+
+    const [ageContent, setAgeContent] = useState(null)
+
+    useEffect(() => {
+        let today = new Date()
+        let calcOne = today - birth
+        age = calcOne / 31557600000
+        console.log(age)
+        setAgeContent(<>I am approximately {age} years old</>)
+    }, [])
+
     return (
-        <div className='start'>
-            {/* <div className='start-grid-one'> */}
-                <div className='slide-in start-one'>
-                    <p>
-                        Hello, my name is Duke.
-                    </p>
+        <div className='start' id='start'>
+            <div className='slide-in start-one'>
+                <p>
+                    Hello, my name is Duke.
+                </p>
+            </div>
+            <div className='slide-in start-two'>
+                <p>
+                    I am a<br/>
+                    <span className='start-software-engineer' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('se') }><i class="fa-solid fa-code"></i> software engineer</span><br/>
+                    <span className='start-game-developer' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('gd')}><i class="fa-solid fa-gamepad"></i> game developer</span><br/>
+                    <span className='start-musician' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('mm')}><i class="fa-solid fa-music"></i> musician</span><br/>
+                </p>
+            </div>
+            <StartImages hoveredText={hoveredText} />
+            <div className='about-start phase-in'>
+                <div className='about-info'>
+                    <p>{ageContent}, based in New York City.</p>
+                    <p>My passion is to bring incredible experiences and unique improvements to people's lives.</p>
                 </div>
-                <div className='slide-in start-two'>
-                    <p>
-                        I am a <span className='start-software-engineer' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('se') }>software engineer</span>
-                        , <span className='start-game-developer' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('gd')}>game developer</span>
-                        , and <span className='start-musician' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('mm')}>musician</span> based in New York City.
-                    </p>
-                </div>
-                <StartImages hoveredText={hoveredText} />
-            {/* </div> */}
-            {/* <div className='start-grid-two'> */}
-                <div className='my-image-container'>
-                    <img src={gremlin} alt='Duke' className='my-image' />
-                </div>
-            {/* </div> */}
+            </div>
+            <div className='my-image-container'>
+                <img src={gremlin} alt='Duke' className='my-image' />
+            </div>
         </div>
     )
 }

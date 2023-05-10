@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 import Start from './Start'
 import Projects from './Projects'
-// import Music from './Music'
 import About from './About'
 import Contact from './Contact'
 
@@ -24,7 +23,6 @@ export default function Home() {
       <Start />
       {isVisible ? <>
         <Projects />
-        {/* <Music /> */}
         <About />
         <Contact />
       </> : <></>}

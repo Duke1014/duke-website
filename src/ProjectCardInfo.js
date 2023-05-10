@@ -35,6 +35,12 @@ export default function ProjectCardInfo({ activeCards }) {
                             <p>hello I have yet to write things here wow :)</p>
                         </div>
                     </div>
+                    <div className='project-card'>
+                        <p>Empty</p>
+                        <div className='project-card-info'>
+                            <p>hello I have yet to write things here wow :)</p>
+                        </div>
+                    </div>
                 </div>
             )
         break;
@@ -64,6 +70,8 @@ export default function ProjectCardInfo({ activeCards }) {
                     </div>
                 </div>
             )
+        break;
+        default:
         break;
     }
 

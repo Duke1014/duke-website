@@ -2,6 +2,14 @@ import React from 'react'
 // import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
+
+    const handleScroll = (e) => {
+        console.log(e)
+        let scrollId = document.getElementById(e)
+        scrollId.scrollIntoView({ behavior:'smooth' })
+    }
+
+
     return (
         <nav>
             <span className='my-name'>
@@ -9,27 +17,22 @@ export default function Navbar() {
             </span>
             <ul className='nav-items'>
                 <li>
-                    <span className='start-nav'>
+                    <span className='start-nav' onClick={() => handleScroll('start')}>
                         Start
                     </span>
                 </li>
                 <li>
-                    <span className='dev-work-nav'>
+                    <span className='dev-work-nav' onClick={() => handleScroll('projects')}>
                         Projects
                     </span>
                 </li>
-                {/* <li>
-                    <span className='music-nav'>
-                        Music
-                    </span>
-                </li> */}
                 <li>
-                    <span className='about-nav'>
+                    <span className='about-nav' onClick={() => handleScroll('about')}>
                         About
                     </span>
                 </li>
                 <li>
-                    <span className='contact-nav'>
+                    <span className='contact-nav' onClick={() => handleScroll('contact')}>
                         Contact  
                     </span>
                 </li>

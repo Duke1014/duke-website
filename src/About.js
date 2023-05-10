@@ -1,23 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 export default function About() {
-
-    let age = null
-    let birth = new Date("1996-10-14")
-
-    const [ageContent, setAgeContent] = useState(null)
-
-    useEffect(() => {
-        let today = new Date()
-        let calcOne = today - birth
-        age = calcOne / 31557600000
-        console.log(age)
-        setAgeContent(<p>I am {age} years old.</p>)
-    }, [])
-
     return (
-        <div className='about'>
-            {ageContent}
+        <div className='about' id='about'>
+            <p>More about Duke</p>
+            <p>Duke is a full-stack web developer based in New York City.</p>
+            <p>Here is my resume, click the button and it will pull it up for you but wont take you away from the page :)</p>
+            <p>Maybe some other stuff idk yet lol lmao</p>
         </div>
     )
 }
