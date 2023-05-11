@@ -88,8 +88,9 @@ nav {
   justify-content: center; 
   height: 95vh;
   flex-wrap: wrap; 
-  margin-left: 5rem;
-  width: 70vw;
+  margin: 0 10rem 0 10rem;
+  /* margin-left: 5rem; */
+  /* width: 70vw; */
 }
 
 .start-one, .start-two, .start-img {
@@ -310,3 +311,16 @@ button:hover {
   font-size: 100%;
 }
 
+button .resume {
+  cursor: pointer;
+}
+
+
+/* ABOUT SECTION */
+
+.about-paragraphs {
+  width: 40%;
+  margin-left: 2rem;
+}
+
+/* END ABOUT SECTION */

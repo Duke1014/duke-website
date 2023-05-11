@@ -34,7 +34,7 @@ export default function Start() {
             <StartImages hoveredText={hoveredText} />
             <div className='about-start phase-in'>
                 <div className='about-info'>
-                    <p>Based in New York City, my passion is to bring incredible experiences and unique improvements to people's lives.</p>
+                    <p>My passion is to bring incredible experiences and unique improvements to people's lives.</p>
                 </div>
             </div>
             <div className='my-image-container'>
