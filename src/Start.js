@@ -9,11 +9,9 @@ export default function Start() {
 
     const handleHover = (type) => {
         setHoveredText(type)
-        console.log(type)
     }
     const handleMouseOut = () => {
         setHoveredText(null)
-        console.log('off')
     }
 
     return (

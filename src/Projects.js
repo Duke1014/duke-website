@@ -18,6 +18,7 @@ export default function Projects() {
 
   return (
     <div className='devwork' id='projects'>
+        <div className='project-banner'>Projects</div>
         <div className='project-buttons'>
             <span className='project-button' id='web-dev' onClick={() => showCard('web')}>
                 Web Development

@@ -207,16 +207,28 @@ nav {
   grid-gap: 1rem;
 }
 
+.project-banner, 
+.about-banner, 
+.contact-banner {
+  position: absolute;
+  font-size: x-large;
+  width: 95%;
+  margin: 0 1% 0 2%;
+  border-bottom: 1px solid cyan;
+  color: cyan;
+}
+
 .project-grid {
-  margin-top: 3rem;
+  margin-top: 10rem;
   display: grid;
   grid-template-columns: repeat(3, 30vw);
   grid-gap: 1rem;
 }
 
 .project-buttons {
-  margin-left: 2rem;
   position: absolute;
+  width: 50vh;
+  margin: 6rem 0 0 2rem;
 }
 
 .project-button:hover::after {
@@ -317,6 +329,10 @@ button .resume {
 
 
 /* ABOUT SECTION */
+
+.about {
+  margin: 1rem 0 0 0;
+}
 
 .about-paragraphs {
   width: 40%;
