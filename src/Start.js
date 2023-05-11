@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import StartImages from './StartImages'
 
 import gremlin from './img/a gremlin.jpg'
-
-// import arrow from './img/arrow.png'
-
 
 export default function Start() {
 
@@ -18,19 +15,6 @@ export default function Start() {
         setHoveredText(null)
         console.log('off')
     }
-
-    let age = null
-    let birth = new Date("1996-10-14")
-
-    const [ageContent, setAgeContent] = useState(null)
-
-    useEffect(() => {
-        let today = new Date()
-        let calcOne = today - birth
-        age = calcOne / 31557600000
-        console.log(age)
-        setAgeContent(<>I am approximately {age} years old</>)
-    }, [])
 
     return (
         <div className='start' id='start'>
@@ -50,8 +34,7 @@ export default function Start() {
             <StartImages hoveredText={hoveredText} />
             <div className='about-start phase-in'>
                 <div className='about-info'>
-                    <p>{ageContent}, based in New York City.</p>
-                    <p>My passion is to bring incredible experiences and unique improvements to people's lives.</p>
+                    <p>Based in New York City, my passion is to bring incredible experiences and unique improvements to people's lives.</p>
                 </div>
             </div>
             <div className='my-image-container'>

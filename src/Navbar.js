@@ -1,5 +1,4 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -8,7 +7,6 @@ export default function Navbar() {
         let scrollId = document.getElementById(e)
         scrollId.scrollIntoView({ behavior:'smooth' })
     }
-
 
     return (
         <nav>
