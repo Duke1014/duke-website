@@ -13,6 +13,13 @@ code {
   position: relative;
 }
 
+.start,
+.devwork,
+.about,
+.contact {
+  padding: 1rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -88,7 +95,7 @@ nav {
   justify-content: center; 
   height: 95vh;
   flex-wrap: wrap; 
-  margin: 0 10rem 0 10rem;
+  margin: 0 10% 0 10%;
   /* margin-left: 5rem; */
   /* width: 70vw; */
 }
@@ -201,10 +208,10 @@ nav {
 .devwork {
   animation: dev-slide 1s forwards;
   opacity: 0;
-  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(3, min-content);
   grid-gap: 1rem;
+  margin: 5rem 0 5rem 0;
 }
 
 .project-banner, 
@@ -213,13 +220,13 @@ nav {
   position: absolute;
   font-size: x-large;
   width: 95%;
-  margin: 0 1% 0 2%;
+  margin: -3% 1% 0 2%;
   border-bottom: 1px solid cyan;
   color: cyan;
 }
 
 .project-grid {
-  margin-top: 10rem;
+  margin: 10rem 0 0 0.5rem;
   display: grid;
   grid-template-columns: repeat(3, 30vw);
   grid-gap: 1rem;
