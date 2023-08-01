@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navbar() {
 
     const handleScroll = (e) => {
-        console.log(e)
+        // console.log(e)
         let scrollId = document.getElementById(e)
         scrollId.scrollIntoView({ behavior:'smooth' })
     }

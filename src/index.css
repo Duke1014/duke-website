@@ -338,11 +338,11 @@ button .resume {
 /* ABOUT SECTION */
 
 .about {
-  margin: 1rem 0 0 0;
+  margin: 5rem 0 5rem 0;
 }
 
 .about-paragraphs {
-  width: 40%;
+  width: 60%;
   margin-left: 2rem;
 }
 
