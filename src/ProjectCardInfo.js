@@ -30,15 +30,28 @@ export default function ProjectCardInfo({ activeCards }) {
                         </div>
                     </div> */}
                     <div className='project-card' id='to-do-list'>
-                        <p>To-Do List</p>
+                        <p>Let's To Do This!</p>
                         <div className='project-card-info'>
-                            <p>hello I have yet to write things here wow :)</p>
+                            <p>"Let's To Do This!" is a dynamic and collaborative app designed to streamline task management within groups. Whether you're coordinating with colleagues, friends, or family, this app enhances productivity and organization by allowing users to interact with group-shared to-do lists. Users can create and manage to-do lists that are shared with a designated group of people.</p>
+                            <p>Skills Utilized:</p>
+                            <p>Javascript/React, Ruby on Rails, PostgreSQL</p>
+                            <button>
+                                <a href='https://github.com/Duke1014/to-do-list' target='_blank' rel='noopener noreferrer'>GitHub</a>
+                            </button>
                         </div>
                     </div>
                     <div className='project-card'>
-                        <p>Empty</p>
+                        <p>Wedding</p>
                         <div className='project-card-info'>
-                            <p>hello I have yet to write things here wow :)</p>
+                            <p>Our wedding website! My wife and I came together to create a parody of a traditional website with our own touch in order to announce our surprise wedding. Includes a reversable doomsday clock to count down the time we say, "I do.", and a count up clock to show our time together. Our contributors towards the wedding have their own section to show off their work.</p>
+                            <p>Skills Utilized:</p>
+                            <p>Javascript/React, launched via Netlify</p>
+                            <button>
+                                <a href='https://github.com/Duke1014/wedding' target='_blank' rel='noopener noreferrer'>GitHub</a>
+                            </button>
+                            <button>
+                                <a href='https://dukealamo.com' target='_blank' rel='noopener noreferrer'>Website</a>
+                            </button>
                         </div>
                     </div>
                 </div>

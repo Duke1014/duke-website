@@ -316,7 +316,7 @@ button {
   border-radius: 0.5rem;
   color: white;
   background-color: rgba(3,13,34,255);
-  margin-left: 1rem;
+  margin-left: 2rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -343,6 +343,10 @@ button .resume {
 
 .about-paragraphs {
   width: 60%;
+  margin-left: 2rem;
+}
+
+.contact img {
   margin-left: 2rem;
 }
 

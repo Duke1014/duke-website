@@ -5,7 +5,7 @@ export default function About() {
     const handleClick = e => {
         e.preventDefault()
         window.open(
-            'https://www.linkedin.com/in/duke-norsworthy/overlay/1635525897769/single-media-viewer/?profileId=ACoAACiKUQcBX6nvNa785ZxtAczilNs1gbkY5v4',
+            'https://www.linkedin.com/in/duke-norsworthy/overlay/1635535884207/single-media-viewer/?profileId=ACoAACiKUQcBX6nvNa785ZxtAczilNs1gbkY5v4',
             '_blank', 
             'noopener,noreferrer'
         )
