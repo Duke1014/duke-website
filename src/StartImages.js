@@ -11,6 +11,7 @@ import git from './img/git.png'
 import ruby from './img/ruby.png'
 import rails from './img/rails.png'
 import postgresql from './img/postgresql.png'
+import python from './img/python.png'
 
 import cplusplus from './img/cplusplus.png'
 import csharp from './img/csharp.png'
@@ -39,6 +40,7 @@ export default function StartImages({ hoveredText }) {
                     <img src={rails} alt='rails' />
                     <img src={postgresql} alt='postgresql' />
                     <img src={ruby} alt='ruby' />
+                    <img src={python} alt='python' />
 
                     <img className='invisible' src={cplusplus} alt='cplusplus' />
                     <img className='invisible' src={csharp} alt='csharp' />
@@ -63,6 +65,7 @@ export default function StartImages({ hoveredText }) {
                     <img className='invisible' src={rails} alt='rails' />
                     <img className='invisible' src={postgresql} alt='postgresql' />
                     <img className='invisible' src={ruby} alt='ruby' />
+                    <img className='invisible' src={python} alt='python' />
 
                     <img src={cplusplus} alt='cplusplus' />
                     <img src={csharp} alt='csharp' />
@@ -89,6 +92,7 @@ export default function StartImages({ hoveredText }) {
                     <img className='invisible' src={rails} alt='rails' />
                     <img className='invisible' src={postgresql} alt='postgresql' />
                     <img className='invisible' src={ruby} alt='ruby' />
+                    <img className='invisible' src={python} alt='python' />
                     <img className='invisible' src={cplusplus} alt='cplusplus' />
                     <img className='invisible' src={csharp} alt='csharp' />
                     <img className='invisible' src={lua} alt='lua' />
@@ -113,6 +117,7 @@ export default function StartImages({ hoveredText }) {
                     <img src={rails} alt='rails' />
                     <img src={postgresql} alt='postgresql' />
                     <img src={ruby} alt='ruby' />
+                    <img src={python} alt='python' />
                     <img src={cplusplus} alt='cplusplus' />
                     <img src={csharp} alt='csharp' />
                     <img src={lua} alt='lua' />

@@ -26,7 +26,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 2em;
   border-bottom: 1px solid rgb(90, 245, 250);
   background-color: rgba(3,13,34,255);
@@ -113,9 +113,9 @@ nav {
   cursor: pointer;
 }
 
-.contact-nav {
+/* .contact-nav {
   padding-right: 1rem;
-}
+} */
 
 /* BEGINNING OF START COMPONENT */ 
 
@@ -267,6 +267,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 48vw);
   grid-gap: 1rem;
+  max-width: 95vw;
 }
 
 .project-buttons {
@@ -398,10 +399,24 @@ button:hover {
 
 /* END ABOUT SECTION */
 
-@media only screen and (min-width: 320px) {
-  /* nav {
-    font-size: 4em;
-  } */
+@media only screen and (min-width: 1025px) {
+  .start {
+    margin: 0;
+    align-content: center;
+    justify-content: space-around;
+  }
+  body {
+    font-size: 2rem;
+  }
+  .start-text {
+    width: 80%;
+  }
+  .start-one, .start-two {
+    max-width: fit-content;
+  }
+  .my-image {
+    width: 12rem;
+  }
 }
 
 /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
