@@ -84,7 +84,7 @@ nav {
 
 .nav-items li {
   border: 1px solid cyan;
-  width: 100%;
+  width: 99.9%;
   height: 6rem;
   background-color: rgba(3,13,34,255);
 }
@@ -101,8 +101,12 @@ nav {
 .music-nav,
 .about-nav,
 .contact-nav {
-  margin-left: 10px;
+  margin-left: 0px;
   font-size: larger;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .start-nav:hover,
@@ -345,10 +349,6 @@ h3 {
   font-weight: 420;
 }
 
-.nav-items li {
-  display: block;
-}
-
 button {
   border: 1px solid white;
   border-radius: 0.5rem;
@@ -416,6 +416,9 @@ button:hover {
   }
   .my-image {
     width: 12rem;
+  }
+  .project-card {
+    font-size: 1rem;
   }
 }
 
