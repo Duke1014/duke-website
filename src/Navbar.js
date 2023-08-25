@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Navbar() {
 
+    const [menu, setMenu] = useState(false)
+
     const handleScroll = (e) => {
-        // console.log(e)
         let scrollId = document.getElementById(e)
         scrollId.scrollIntoView({ behavior:'smooth' })
     }
-
+      
     return (
         <nav>
             <span className='my-name'>
                 Duke Norsworthy
             </span>
-            <ul className='nav-items'>
+            <div className="menu-button" onClick={() => setMenu(!menu)}>
+                <div className="menu-stuff-one"></div>
+                <div className="menu-stuff-two"></div>
+                <div className="menu-stuff-three"></div>
+            </div>
+            <ul className={menu ? 'nav-items' : 'hidden-nav'}>
                 <li>
                     <span className='start-nav' onClick={() => handleScroll('start')}>
                         Start

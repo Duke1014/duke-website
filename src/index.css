@@ -3,6 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background-color: rgba(3,13,34,255);
   color: white;
+  font-size: 3rem;
+  min-width: 100%
 }
 
 code {
@@ -24,15 +26,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: auto;
-  height: 3rem;
+  width: 100vw;
+  height: 2em;
   border-bottom: 1px solid rgb(90, 245, 250);
   background-color: rgba(3,13,34,255);
-  top: 0;
-  left: 0;
   z-index: 999;
-  padding: 0%;
-  margin: 0;
   animation: name-slide 1.5s forwards;
   animation-delay: 3s;
   top: -15rem;
@@ -42,8 +40,18 @@ nav {
 .my-name {
   float: left;
   display: flex;
-  font-size: x-large;
+  /* font-size: 1em; */
   margin-left: 1rem
+}
+
+.menu-button {
+  margin-right: 1rem;
+}
+.menu-stuff-one, .menu-stuff-two, .menu-stuff-three {
+  background-color: white;
+  height: 5px;
+  width: 40px;
+  margin: 5px;
 }
 
 @keyframes name-slide {
@@ -62,8 +70,30 @@ nav {
 }
 
 .nav-items {
-  float: right;
   display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  top: 1em;
+  align-content: space-around;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-items li {
+  border: 1px solid cyan;
+  width: 100%;
+  height: 6rem;
+  background-color: rgba(3,13,34,255);
+}
+
+.hidden-nav {
+  /* display: none; */
+  /* flex-direction: column; */
+  top: -30rem;
+  position: absolute;
 }
 
 .start-nav,
@@ -91,18 +121,16 @@ nav {
 
 .start {
   display: flex; 
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center; 
-  height: 95vh;
+  height: 90vh;
   flex-wrap: wrap; 
-  margin: 0 10% 0 10%;
-  /* margin-left: 5rem; */
-  /* width: 70vw; */
+  margin: 0 5% 0 5%;
 }
 
-.start-one, .start-two, .start-img {
+/* .start-one, .start-two, .start-img {
   width: 40rem;
-}
+} */
 
 .start-one .start-two {
   font-size: xx-large;
@@ -168,6 +196,17 @@ nav {
   opacity: 0;
 }
 
+.phase-in {
+  width: 80%;
+}
+
+.start-text {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
 @keyframes phase-in {
   0% {
     opacity: 0;
@@ -178,13 +217,11 @@ nav {
 }
 
 .my-image-container {
-  display: flex; 
+  display: flex;
   align-items: center;
-  margin-left: 1rem;
   position: relative;
-  width: 10rem;
-  height: 100%;
-
+  height: 20%;
+  justify-content: space-around;
 }
 
 .my-image {
@@ -192,8 +229,8 @@ nav {
   flex-direction: column;
   justify-content: center; 
   position: absolute;
-  width: 15rem;
-  border-radius: 10rem;
+  width: 20rem;
+  border-radius: 20rem;
   float: right;
 }
 
@@ -228,14 +265,14 @@ nav {
 .project-grid {
   margin: 10rem 0 0 0.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 30vw);
+  grid-template-columns: repeat(2, 48vw);
   grid-gap: 1rem;
 }
 
 .project-buttons {
   position: absolute;
-  width: 50vh;
   margin: 6rem 0 0 2rem;
+  font-size: 2.6rem;
 }
 
 .project-button:hover::after {
@@ -280,9 +317,9 @@ nav {
   border: 1px solid white;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
-  width: 30vw;
-  margin-inline-start: 2vh; 
-  box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3)
+  width: 45vw;
+  font-size: 2rem;
+  box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3);
 }
 
 .project-card img {
@@ -322,18 +359,14 @@ button {
 
 button a {
   text-decoration: none;
+  font-size: 100%;
 }
 
 button:hover {
   color: rgb(0, 247, 255);
   border-color: rgb(0, 247, 255);
-  font-size: 100%;
+  font-size: 140%;
 }
-
-button .resume {
-  cursor: pointer;
-}
-
 
 /* ABOUT SECTION */
 
@@ -342,8 +375,21 @@ button .resume {
 }
 
 .about-paragraphs {
-  width: 60%;
+  width: 95%;
   margin-left: 2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+}
+
+.contact-buttons {
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .contact img {
@@ -351,3 +397,16 @@ button .resume {
 }
 
 /* END ABOUT SECTION */
+
+@media only screen and (min-width: 320px) {
+  /* nav {
+    font-size: 4em;
+  } */
+}
+
+/* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
+/* @media (min-width:480px)  { smartphones, Android phones, landscape iPhone } */
+/* @media (min-width:600px)  { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) } */
+/* @media (min-width:801px)  { tablet, landscape iPad, lo-res laptops ands desktops } */
+/* @media (min-width:1025px) { big landscape tablets, laptops, and desktops } */
+/* @media (min-width:1281px) { hi-res laptops and desktops } */
