@@ -360,13 +360,13 @@ button {
 
 button a {
   text-decoration: none;
-  font-size: 100%;
+  /* font-size: 100%; */
 }
 
 button:hover {
   color: rgb(0, 247, 255);
   border-color: rgb(0, 247, 255);
-  font-size: 140%;
+  /* font-size: 140%; */
 }
 
 /* ABOUT SECTION */
@@ -420,6 +420,10 @@ button:hover {
   .project-card {
     font-size: 1rem;
   }
+}
+
+@media only screen and (min-width: 600px) {
+
 }
 
 /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
