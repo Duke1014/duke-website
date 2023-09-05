@@ -1,7 +1,7 @@
 import React from 'react'
 
 import shards from './img/ShardsOfDalaya.png'
-// import doorsofdivergence from './img/doorsofdivergence.png'
+import doorsofdivergence from './img/doorsofdivergence.png'
 
 export default function ProjectCardInfo({ activeCards }) {
 
@@ -11,24 +11,22 @@ export default function ProjectCardInfo({ activeCards }) {
         case 'web-dev':
             cardContent = (
                 <div className='project-grid'>
-                    {/* <div className='project-card' id='doors-of-divergence'>
+                    <div className='project-card' id='doors-of-divergence'>
+                        <p>Lore Map</p>
                         <div className='project-card-info'>
                             <img src={doorsofdivergence} alt='Doors of Divergence' />
-                            <p>Doors of Divergence is an escape room experience, where you and your friends will work together in a multiverse of stories that are all tied together. They are located in Brooklyn, NY, as a part of the FutureProof building. If you live in the NYC area, I highly recommend any of their escape rooms! Since their story is woven in such an intricate way, <a href='http://doorsofdivergence.com/rift'>I've built their tracking system</a>, where at the end of the experience, you will recieve codes to enter into the site, revealing achievements, lore, and a layout of the story you've seen so far.</p>
+                            <p>The lore map is designed with the Doors of Divergence (DoD) escape room experience in mind. DoD has multiple endings to each of their stories, with hidden achievements in each. The lore map is designed to show the player where they are in the story, what happened as they played, and what hidden bonuses they've uncovered. It also works as an active tracking system to show how far along someone is in the escape room!</p>
                             <br/>
                             <p>Skills uitilized:</p>
                             <p>Javascript/React, Google Firebase, Tailwind CSS, Photoshop</p>
                             <button>
-                                <a href='https://github.com/Duke1014/DoorsOfDivergence' target='_blank' rel='noopener noreferrer'>Github</a>
-                            </button>
-                            <button>
-                                <a href='https://doorsofdivergence.com/rift' target='_blank' rel='noopener noreferrer'>Tracking System</a>
+                                <a href='https://github.com/Duke1014/lore-map' target='_blank' rel='noopener noreferrer'>Github</a>
                             </button>
                             <button>
                                 <a href='https://doorsofdivergence.com/' target='_blank' rel='noopener noreferrer'>Website</a>
                             </button>
                         </div>
-                    </div> */}
+                    </div>
                     <div className='project-card' id='to-do-list'>
                         <p>Let's To Do This!</p>
                         <div className='project-card-info'>
