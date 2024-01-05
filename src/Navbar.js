@@ -20,23 +20,23 @@ export default function Navbar() {
                 <div className="menu-stuff-three"></div>
             </div>
             <ul className={menu ? 'nav-items' : 'hidden-nav'}>
-                <li>
-                    <span className='start-nav' onClick={() => handleScroll('start')}>
+                <li onClick={() => handleScroll('start')}>
+                    <span className='start-nav'>
                         Start
                     </span>
                 </li>
-                <li>
-                    <span className='dev-work-nav' onClick={() => handleScroll('projects')}>
+                <li onClick={() => handleScroll('projects')}>
+                    <span className='dev-work-nav'>
                         Projects
                     </span>
                 </li>
-                <li>
-                    <span className='about-nav' onClick={() => handleScroll('about')}>
+                <li onClick={() => handleScroll('about')}>
+                    <span className='about-nav'>
                         About
                     </span>
                 </li>
-                <li>
-                    <span className='contact-nav' onClick={() => handleScroll('contact')}>
+                <li onClick={() => handleScroll('contact')}>
+                    <span className='contact-nav'>
                         Contact  
                     </span>
                 </li>
