@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-  height: 2em;
+  height: 3em;
   border-bottom: 1px solid rgb(90, 245, 250);
   background-color: rgba(3,13,34,255);
   z-index: 999;
@@ -40,7 +40,7 @@ nav {
 .my-name {
   float: left;
   display: flex;
-  /* font-size: 1em; */
+  font-size: 1.5em;
   margin-left: 1rem
 }
 
@@ -49,9 +49,9 @@ nav {
 }
 .menu-stuff-one, .menu-stuff-two, .menu-stuff-three {
   background-color: white;
-  height: 5px;
-  width: 40px;
-  margin: 5px;
+  height: .2em;
+  width: 1.2em;
+  margin: .15em;
 }
 
 @keyframes name-slide {
@@ -75,7 +75,7 @@ nav {
   position: absolute;
   flex-direction: column;
   align-items: center;
-  top: 1em;
+  top: 2em;
   align-content: space-around;
   margin-bottom: 0;
   padding: 0;
