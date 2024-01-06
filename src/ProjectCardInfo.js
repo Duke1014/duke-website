@@ -1,14 +1,16 @@
 import React from 'react'
 
-import shards from './img/ShardsOfDalaya.png'
+// import shards from './img/ShardsOfDalaya.png'
 import doorsofdivergence from './img/doorsofdivergence.png'
 
-export default function ProjectCardInfo({ activeCards }) {
+export default function ProjectCardInfo(
+    // { activeCards }
+    ) {
 
     let cardContent = null;
 
-    switch (activeCards) {
-        case 'web-dev':
+    // switch (activeCards) {
+    //     case 'web-dev':
             cardContent = (
                 <div className='project-grid'>
                     <div className='project-card' id='doors-of-divergence'>
@@ -54,37 +56,37 @@ export default function ProjectCardInfo({ activeCards }) {
                     </div>
                 </div>
             )
-        break;
-        case 'game-dev':
-            cardContent = (
-                <div className='project-grid'>
-                    <div className='project-card' id='shards-of-dalaya'>
-                        <div className='project-card-info'>
-                            <img src={shards} alt='Shards of Dalaya' />
-                            <p>Shards of Dalaya is an emulated EverQuest server, and part of the <a href='http://www.eqemulator.org/'>EQEmu community</a>. Filled with custom content throughout the world, players will find a completely unique experience here compared to the original EverQuest game. I've made a couple of raids, quests, and zones throughout the game, including the powerful Spiny Mole.</p>
-                            <br/>
-                            <div className='project-card-info-bottom'>
-                                <p>Skills uitilized:</p>
-                                <p>Lua, C++, TortoiseSVN</p>
-                                <p><a href='https://shardsofdalaya.com/' target="_blank" rel="noopener noreferrer">Website</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )
-        break;
-        case 'music':
-            cardContent = (
-                <div className='project-grid'>
-                    <div className='project-card'>
-                        <p>Coming soon!</p>
-                    </div>
-                </div>
-            )
-        break;
-        default:
-        break;
-    }
+    //     break;
+    //     case 'game-dev':
+    //         cardContent = (
+    //             <div className='project-grid'>
+    //                 <div className='project-card' id='shards-of-dalaya'>
+    //                     <div className='project-card-info'>
+    //                         <img src={shards} alt='Shards of Dalaya' />
+    //                         <p>Shards of Dalaya is an emulated EverQuest server, and part of the <a href='http://www.eqemulator.org/'>EQEmu community</a>. Filled with custom content throughout the world, players will find a completely unique experience here compared to the original EverQuest game. I've made a couple of raids, quests, and zones throughout the game, including the powerful Spiny Mole.</p>
+    //                         <br/>
+    //                         <div className='project-card-info-bottom'>
+    //                             <p>Skills uitilized:</p>
+    //                             <p>Lua, C++, TortoiseSVN</p>
+    //                             <p><a href='https://shardsofdalaya.com/' target="_blank" rel="noopener noreferrer">Website</a></p>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         )
+    //     break;
+    //     case 'music':
+    //         cardContent = (
+    //             <div className='project-grid'>
+    //                 <div className='project-card'>
+    //                     <p>Coming soon!</p>
+    //                 </div>
+    //             </div>
+    //         )
+    //     break;
+    //     default:
+    //     break;
+    // }
 
   return (
     <div>

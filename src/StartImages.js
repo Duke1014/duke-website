@@ -13,13 +13,13 @@ import rails from './img/rails.png'
 import postgresql from './img/postgresql.png'
 import python from './img/python.png'
 
-import cplusplus from './img/cplusplus.png'
-import csharp from './img/csharp.png'
-import lua from './img/lua.png'
-import tortoisesvn from './img/tortoisesvn.png'
+// import cplusplus from './img/cplusplus.png'
+// import csharp from './img/csharp.png'
+// import lua from './img/lua.png'
+// import tortoisesvn from './img/tortoisesvn.png'
 
-import flstudio from './img/flstudio.png'
-import studioone from './img/studioone.png'
+// import flstudio from './img/flstudio.png'
+// import studioone from './img/studioone.png'
 
 export default function StartImages({ hoveredText }) {
 
@@ -41,13 +41,13 @@ export default function StartImages({ hoveredText }) {
                     <img src={postgresql} alt='postgresql' />
                     <img src={ruby} alt='ruby' />
                     <img src={python} alt='python' />
-
+{/* 
                     <img className='invisible' src={cplusplus} alt='cplusplus' />
                     <img className='invisible' src={csharp} alt='csharp' />
                     <img className='invisible' src={lua} alt='lua' />
                     <img className='invisible' src={tortoisesvn} alt='tortoisesvn' />
                     <img className='invisible' src={flstudio} alt='flstudio' />
-                    <img className='invisible' src={studioone} alt='studioone' />
+                    <img className='invisible' src={studioone} alt='studioone' /> */}
                 </div>
             )
         break;
@@ -67,14 +67,14 @@ export default function StartImages({ hoveredText }) {
                     <img className='invisible' src={ruby} alt='ruby' />
                     <img className='invisible' src={python} alt='python' />
 
-                    <img src={cplusplus} alt='cplusplus' />
+                    {/* <img src={cplusplus} alt='cplusplus' />
                     <img src={csharp} alt='csharp' />
                     <img src={lua} alt='lua' />
                     <img src={tortoisesvn} alt='tortoisesvn' />
 
 
                     <img className='invisible' src={flstudio} alt='flstudio' />
-                    <img className='invisible' src={studioone} alt='studioone' />
+                    <img className='invisible' src={studioone} alt='studioone' /> */}
                 </div> 
             )
         break;
@@ -93,13 +93,13 @@ export default function StartImages({ hoveredText }) {
                     <img className='invisible' src={postgresql} alt='postgresql' />
                     <img className='invisible' src={ruby} alt='ruby' />
                     <img className='invisible' src={python} alt='python' />
-                    <img className='invisible' src={cplusplus} alt='cplusplus' />
+                    {/* <img className='invisible' src={cplusplus} alt='cplusplus' />
                     <img className='invisible' src={csharp} alt='csharp' />
                     <img className='invisible' src={lua} alt='lua' />
-                    <img className='invisible' src={tortoisesvn} alt='tortoisesvn' />
+                    <img className='invisible' src={tortoisesvn} alt='tortoisesvn' /> */}
                     
-                    <img src={flstudio} alt='flstudio' />
-                    <img src={studioone} alt='studioone' />
+                    {/* <img src={flstudio} alt='flstudio' />
+                    <img src={studioone} alt='studioone' /> */}
                 </div>
             )
         break;
@@ -118,12 +118,12 @@ export default function StartImages({ hoveredText }) {
                     <img src={postgresql} alt='postgresql' />
                     <img src={ruby} alt='ruby' />
                     <img src={python} alt='python' />
-                    <img src={cplusplus} alt='cplusplus' />
+                    {/* <img src={cplusplus} alt='cplusplus' />
                     <img src={csharp} alt='csharp' />
                     <img src={lua} alt='lua' />
                     <img src={tortoisesvn} alt='tortoisesvn' />
                     <img src={flstudio} alt='flstudio' />
-                    <img src={studioone} alt='studioone' />
+                    <img src={studioone} alt='studioone' /> */}
                 </div>
             )
         break;       

@@ -142,7 +142,7 @@ nav {
 }
 
 .start-img img {
-  width: 2rem;
+  width: 2.5rem;
   opacity: 1;
   transition: opacity 0.5s ease-out;
   margin-left: 1rem;
@@ -260,7 +260,7 @@ nav {
 .about-banner, 
 .contact-banner {
   position: absolute;
-  font-size: x-large;
+  font-size: 1.2em;
   width: 95%;
   margin: -3% 1% 0 2%;
   border-bottom: 1px solid cyan;

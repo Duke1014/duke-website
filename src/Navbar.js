@@ -1,20 +1,22 @@
-import React, { useState } from 'react'
+import React
+// , { useState } 
+from 'react'
 
 export default function Navbar() {
 
-    const [menu, setMenu] = useState(false)
+    // const [menu, setMenu] = useState(false)
 
-    const handleScroll = (e) => {
-        let scrollId = document.getElementById(e)
-        scrollId.scrollIntoView({ behavior:'smooth' })
-    }
+    // const handleScroll = (e) => {
+    //     let scrollId = document.getElementById(e)
+    //     scrollId.scrollIntoView({ behavior:'smooth' })
+    // }
       
     return (
         <nav>
             <span className='my-name'>
                 Duke Norsworthy
             </span>
-            <div className="menu-button" onClick={() => setMenu(!menu)}>
+            {/* <div className="menu-button" onClick={() => setMenu(!menu)}>
                 <div className="menu-stuff-one"></div>
                 <div className="menu-stuff-two"></div>
                 <div className="menu-stuff-three"></div>
@@ -40,7 +42,7 @@ export default function Navbar() {
                         Contact  
                     </span>
                 </li>
-            </ul>
+            </ul> */}
         </nav>
     )
 }
