@@ -268,11 +268,11 @@ nav {
 }
 
 .project-grid {
-  margin: 10rem 0 0 0.5rem;
+  margin: 1rem 0 0 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 48vw);
+  /* grid-template-columns: repeat(2, 48vw); */
   grid-gap: 1rem;
-  max-width: 95vw;
+  /* max-width: 95vw; */
 }
 
 .project-buttons {
@@ -323,14 +323,32 @@ nav {
   border: 1px solid white;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
-  width: 45vw;
+  width: 95vw;
   font-size: 2rem;
   box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3);
 }
 
-.project-card img {
-  width: 28vw;
+.project-card-top {
+  display: flex;
+}
+
+.project-title-container {
+  width: 100%;
+}
+
+.project-card-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-card-img {
+  width: 35%;
   margin-left: 1vw;
+}
+
+.project-card-img img {
+  width: 100%;
 }
 
 .project-card-info {
@@ -357,6 +375,7 @@ button {
   background-color: rgba(3,13,34,255);
   margin-left: 2rem;
   transition: all 0.2s ease-in-out;
+  font-size: 2rem;
 }
 
 button a {
@@ -417,9 +436,6 @@ button:hover {
   }
   .my-image {
     width: 12rem;
-  }
-  .project-card {
-    font-size: 1rem;
   }
 }
 
