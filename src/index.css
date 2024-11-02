@@ -85,7 +85,7 @@ nav {
   display: flex;
   align-items: center;
   border: 1px solid cyan;
-  width: 100%;
+  width: 99.9%;
   height: 6rem;
   background-color: rgba(3,13,34,255);
 }
@@ -102,8 +102,12 @@ nav {
 .music-nav,
 .about-nav,
 .contact-nav {
-  margin-left: 10px;
+  margin-left: 0px;
   font-size: larger;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .start-nav:hover,
@@ -114,9 +118,9 @@ nav {
   cursor: pointer;
 }
 
-.contact-nav {
+/* .contact-nav {
   padding-right: 1rem;
-}
+} */
 
 /* BEGINNING OF START COMPONENT */ 
 
@@ -138,7 +142,7 @@ nav {
 }
 
 .start-img img {
-  width: 2rem;
+  width: 2.5rem;
   opacity: 1;
   transition: opacity 0.5s ease-out;
   margin-left: 1rem;
@@ -256,7 +260,7 @@ nav {
 .about-banner, 
 .contact-banner {
   position: absolute;
-  font-size: x-large;
+  font-size: 1.2em;
   width: 95%;
   margin: -3% 1% 0 2%;
   border-bottom: 1px solid cyan;
@@ -264,10 +268,11 @@ nav {
 }
 
 .project-grid {
-  margin: 10rem 0 0 0.5rem;
+  margin: 1rem 0 0 2rem;
   display: grid;
-  grid-template-columns: repeat(2, 48vw);
+  /* grid-template-columns: repeat(2, 48vw); */
   grid-gap: 1rem;
+  /* max-width: 95vw; */
 }
 
 .project-buttons {
@@ -318,14 +323,32 @@ nav {
   border: 1px solid white;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
-  width: 45vw;
+  width: 95vw;
   font-size: 2rem;
   box-shadow: 0px 0px 14px rgba(255, 255, 255, 0.3);
 }
 
-.project-card img {
-  width: 28vw;
+.project-card-top {
+  display: flex;
+}
+
+.project-title-container {
+  width: 100%;
+}
+
+.project-card-title {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.project-card-img {
+  width: 35%;
   margin-left: 1vw;
+}
+
+.project-card-img img {
+  width: 100%;
 }
 
 .project-card-info {
@@ -352,17 +375,18 @@ button {
   background-color: rgba(3,13,34,255);
   margin-left: 2rem;
   transition: all 0.2s ease-in-out;
+  font-size: 2rem;
 }
 
 button a {
   text-decoration: none;
-  font-size: 100%;
+  /* font-size: 100%; */
 }
 
 button:hover {
   color: rgb(0, 247, 255);
   border-color: rgb(0, 247, 255);
-  font-size: 140%;
+  /* font-size: 140%; */
 }
 
 /* ABOUT SECTION */
@@ -395,10 +419,28 @@ button:hover {
 
 /* END ABOUT SECTION */
 
-@media only screen and (min-width: 320px) {
-  /* nav {
-    font-size: 4em;
-  } */
+@media only screen and (min-width: 1025px) {
+  .start {
+    margin: 0;
+    align-content: center;
+    justify-content: space-around;
+  }
+  body {
+    font-size: 2rem;
+  }
+  .start-text {
+    width: 80%;
+  }
+  .start-one, .start-two {
+    max-width: fit-content;
+  }
+  .my-image {
+    width: 12rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+
 }
 
 /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
