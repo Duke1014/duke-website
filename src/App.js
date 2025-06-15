@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from './Home';
 // import DevWork from './DevWork';
 // import Gallery from './Gallery';
@@ -15,7 +14,7 @@ function App() {
     <div>
       {/* <Banner /> */}
       <div className='background'></div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Home />
     </div>
       // <Routes>

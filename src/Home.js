@@ -13,10 +13,8 @@ export default function Home() {
     const timeout = setTimeout(() => {
       setIsVisible(true)
     }, 4000)
-
     return () => clearTimeout(timeout);
   }, [])
-
 
   return (
     <div className='home'>

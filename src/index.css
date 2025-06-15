@@ -11,8 +11,8 @@ body {
 .background {
   min-width: 500rem;
   min-height: 500rem;
-  background: linear-gradient(rgb(10, 96, 255), rgb(0, 255, 13));
-  animation: background-animation 10s infinite;
+  background: linear-gradient(0deg, rgb(0, 199, 10), rgb(5, 54, 146), rgb(48, 58, 55));
+  animation: background-animation 15s infinite;
   position: fixed;
   top: -100rem;
   left: -100rem;

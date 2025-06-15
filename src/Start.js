@@ -1,8 +1,4 @@
-import React
-// , { useState } 
-from 'react'
 import StartImages from './StartImages'
-
 import gremlin from './img/a gremlin.jpg'
 
 export default function Start() {
@@ -15,6 +11,12 @@ export default function Start() {
     // const handleMouseOut = () => {
     //     setHoveredText(null)
     // }
+
+    const scrollTimer = () => {
+        // window.setInterval(function, milliseconds);
+        // setTimeout(function, milliseconds)
+        // clearTimeout(myVar);
+    }
 
     return (
         <div className='start' id='start'>
