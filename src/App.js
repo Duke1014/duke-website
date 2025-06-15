@@ -14,6 +14,7 @@ function App() {
     // <BrowserRouter> 
     <div>
       {/* <Banner /> */}
+      <div className='background'></div>
       <Navbar />
       <Home />
     </div>
