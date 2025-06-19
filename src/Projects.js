@@ -1,7 +1,3 @@
-import React
-// , { useState }
-from 'react'
-
 import ProjectCardInfo from './ProjectCardInfo'
 
 export default function Projects() {

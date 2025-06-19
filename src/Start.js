@@ -12,11 +12,11 @@ export default function Start() {
     //     setHoveredText(null)
     // }
 
-    const scrollTimer = () => {
-        // window.setInterval(function, milliseconds);
-        // setTimeout(function, milliseconds)
-        // clearTimeout(myVar);
-    }
+    // const scrollTimer = () => {
+    //     // window.setInterval(function, milliseconds);
+    //     // setTimeout(function, milliseconds)
+    //     // clearTimeout(myVar);
+    // }
 
     return (
         <div className='start' id='start'>
