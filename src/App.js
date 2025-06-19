@@ -2,7 +2,7 @@ import Home from './Home';
 // import DevWork from './DevWork';
 // import Gallery from './Gallery';
 // import Music from './Music';
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 // import Contact from './Contact';
 // import Banner from './Banner';
 // import Games from './Games';
