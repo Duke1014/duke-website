@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
 import Start from './Start'
-import Projects from './Projects'
-import About from './About'
-import Contact from './Contact'
+// import Projects from './Projects'
+// import About from './About'
+// import Contact from './Contact'
 
 export default function Home() {
 
@@ -19,10 +19,11 @@ export default function Home() {
   return (
     <div className='home'>
       <Start />
+        {/* <div style={{height: "1000vh"}}></div> */}
       {isVisible ? <>
+        {/* <About />
         <Projects />
-        <About />
-        <Contact />
+        <Contact /> */}
       </> : <></>}
     </div>
   )

@@ -2,13 +2,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   /* background-color: rgba(3,13,34,255); */
-  color: white;
-  font-size: 3rem;
+  /* color: white; */
+  /* font-size: 3rem; */
   min-width: 100%;
-
 }
 
-.background {
+/* .background {
   min-width: 500rem;
   min-height: 500rem;
   background: linear-gradient(0deg, rgb(0, 199, 10), rgb(5, 54, 146), rgb(48, 58, 55));
@@ -16,27 +15,160 @@ body {
   position: fixed;
   top: -100rem;
   left: -100rem;
+} */
+
+.background-container {
+  background: linear-gradient(0deg,rgba(0, 0, 50, 1) 0%, rgba(0, 0, 1, 1) 47.5%, rgb(4, 0, 255) 50%, rgba(0, 0, 1, 1) 52.5%, rgba(0, 0, 50, 1) 100%);
+  width: 100vw;
+  height: 100vh;
+  z-index: -999;
+  position: fixed;
 }
 
-@keyframes background-animation {
+.background-container::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background: repeating-conic-gradient(
+    from 0deg, 
+    transparent 0deg 0deg,
+    green 0deg .0001deg, 
+    transparent 1deg 15deg
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.line {
+  background-color: #04e422; 
+  height: 1px; 
+  position: absolute;
+  left: 0;
+  width: 100vw;
+}
+
+/* .background-container::after {
+  position:absolute;
+  inset: 0;
+  content: '';
+  background: linear-gradient(0deg, rgba(0,0,1,.1) 0%, rgba(255, 0, 0, 0) 50%, rgba(0,0,1,.1) 0%);
+  pointer-events: none;
+  z-index: 5;
+} */
+
+
+/* .line-effects {
+  width: 2px;
+  height: 2px;
+  animation: line-animation 60s infinite;
+  background-color: aqua;
+}
+
+@keyframes line-animation {
+  100% {
+    transform: skew(300, 300);
+  }
+} */
+
+
+/* @keyframes background-animation {
   100% {
     transform: rotate(1turn);
   }
+} */
+
+.home {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.duke-talk-container {
+  width: 100vw;
+  position: absolute;
+  top: 30%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: space-around;
+  animation: phase-in 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes phase-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.duke-talk {
+  /* flex: 1; */
+  width: 100%;
+  /* margin: 0 5%; */
+  /* left:50%; */
+}
+
+.my-image-container {
+  display: flex;
+  /* position: absolute; */
+  align-items: center;
+  justify-content: center;
+  /* width: 10rem; */
+  /* height: 10rem; */
+}
+
+.my-image {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  position: relative;
+  width: 15rem;
+  border-radius: 20rem;
+}
+
+.duke-text {
+  /* background-color: rgb(4, 228, 34); */
+  text-align: center;
+  height: 15rem;
+  color:white;
+  line-height: 2rem;
+  width: 60%;
+  margin: 0 20%;
+}
+
+.duke-text > p {
+  color: blue;
+}
+
+.responses {
+  display: grid;
+  height: 10rem;
+  width: 35rem;
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.responses > button {
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.footer {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  margin: 0 0.5rem;
+  width: 30vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-.home {
-  position: relative;
-}
-
-.start,
-.devwork,
-.about,
-.contact {
-  padding: 1rem;
 }
 
 nav {
@@ -141,28 +273,46 @@ nav {
 
 /* BEGINNING OF START COMPONENT */ 
 
-.start {
+.start-container {
+  height: 100vh;
+  width: 50vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid: auto / auto;
+}
+
+.start-one {
+  display:block;
+}
+
+.greetings {
+  width:50%;
+}
+
+/* .start {
   display: flex; 
   flex-direction: column-reverse;
   justify-content: center; 
-  height: 75vh;
+  height: 100vh;
   flex-wrap: wrap; 
   margin: 0 5% 0 5%;
-}
+} */
 
 /* .start-one, .start-two, .start-img {
   width: 40rem;
 } */
 
-.start-one .start-two {
+/* .start-one .start-two {
   font-size: xx-large;
-}
+} */
 
 .start-img img {
-  width: 2.5rem;
-  opacity: 1;
+  /* width: 2.5rem; */
+  /* opacity: 1; */
   transition: opacity 0.5s ease-out;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 .slide-in {
@@ -198,63 +348,37 @@ nav {
 .start-game-developer, 
 .start-musician {
   color: rgb(0, 255, 149);
-  font-size: 4rem;
+  /* font-size: 4rem; */
 }
 
 .start-software-engineer:hover, 
 .start-game-developer:hover, 
 .start-musician:hover {
   font-size: 4rem;
-  transition: font-size 0.75s ease-in-out;
+  transition: font-size 0.05s ease-in-out;
 }
 
 .invisible {
   opacity: 0 !important;
 }
 
-.phase-in, .my-image {
-  animation: phase-in 1s forwards;
-  animation-delay: 3s;
-  opacity: 0;
-}
+
 
 .phase-in {
   width: 80%;
 }
 
-.start-text {
+/* .start-text {
   display: flex;
   flex-direction: column;
   align-content: space-around;
   flex-wrap: wrap;
-}
+} */
 
-@keyframes phase-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-.my-image-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 20%;
-  justify-content: space-around;
-}
 
-.my-image {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  position: absolute;
-  width: 20rem;
-  border-radius: 20rem;
-  float: right;
-}
+
+
 
 .about-start {
   position: relative;
@@ -373,9 +497,9 @@ nav {
   opacity: 0;
 }
 
-p, h3 {
+/* p, h3 {
   margin-inline: 1rem;
-}
+} */
 
 a {
   color: white;
@@ -386,13 +510,13 @@ h3 {
 }
 
 button {
-  border: 1px solid white;
-  border-radius: 0.5rem;
+  /* border: 1px solid white; */
+  /* border-radius: 0.5rem; */
   color: white;
   background-color: rgba(3,13,34,255);
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   transition: all 0.2s ease-in-out;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 button a {
@@ -436,7 +560,7 @@ button:hover {
 
 /* END ABOUT SECTION */
 
-@media only screen and (min-width: 1025px) {
+/* @media only screen and (min-width: 1025px) {
   .start {
     margin: 0;
     align-content: center;
@@ -458,7 +582,7 @@ button:hover {
 
 @media only screen and (min-width: 600px) {
 
-}
+} */
 
 /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
 /* @media (min-width:480px)  { smartphones, Android phones, landscape iPhone } */

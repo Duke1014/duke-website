@@ -1,4 +1,6 @@
 import Home from './Home';
+import Background from './Background';
+import Footer from './Footer';
 // import DevWork from './DevWork';
 // import Gallery from './Gallery';
 // import Music from './Music';
@@ -13,9 +15,10 @@ function App() {
     // <BrowserRouter> 
     <div>
       {/* <Banner /> */}
-      <div className='background'></div>
+      <Background />
       {/* <Navbar /> */}
       <Home />
+      <Footer />
     </div>
       // <Routes>
       //   <Route path='/' element={ <Home /> } />
