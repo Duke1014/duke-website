@@ -85,10 +85,11 @@ body {
 
 .duke-talk-container {
   width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 30%;
+  top: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr 1fr;
   justify-content: space-around;
   animation: phase-in 1s forwards;
   animation-delay: 1s;
@@ -107,9 +108,12 @@ body {
 
 .duke-talk {
   /* flex: 1; */
-  width: 100%;
+  /* width: 100%; */
   /* margin: 0 5%; */
   /* left:50%; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .my-image-container {
@@ -136,8 +140,9 @@ body {
   height: 15rem;
   color:white;
   line-height: 2rem;
-  width: 60%;
-  margin: 0 20%;
+  width: 15vw;
+  margin: 0 auto;
+  font-size: 1rem;
 }
 
 .duke-text > p {
@@ -156,6 +161,13 @@ body {
   height: 3rem;
   font-size: 1rem;
 }
+
+.extra-stuff:empty {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
 
 .footer {
   position:absolute;

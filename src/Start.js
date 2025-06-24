@@ -5,8 +5,10 @@ import { text } from './DukeText.js'
 export default function Start() {
 
     const [dukeText, setDukeText] = useState(text.greetings)
-
+    const [extra, setExtra] = useState()
     const [stopwatch, setStopwatch] = useState('')
+
+
 
     useEffect(() => {
         setInterval(timeCalc, 1000)
@@ -52,7 +54,7 @@ export default function Start() {
                     }) : <></>}
                 </div>
                 <div className='extra-stuff'>
-                    This is where extra images or project info would go
+                    {extra}
                 </div>
             </div>
         </div>
