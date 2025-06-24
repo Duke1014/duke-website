@@ -4,8 +4,8 @@ import { text } from './DukeText.js'
 
 export default function Start() {
 
-    const [dukeText, setDukeText] = useState(text.greetings)
-    const [extra, setExtra] = useState()
+    const [dukeText, setDukeText] = useState(text.Start)
+    // const [extra, setExtra] = useState()
     const [stopwatch, setStopwatch] = useState('')
 
     useEffect(() => {
@@ -31,7 +31,7 @@ export default function Start() {
     }
 
     const handleResponseButton = (e) => {
-        console.log(e)
+        console.log(e.target)
         setDukeText(`Sorry friend. I started rebuilding this site to look WAY better than it did before - like literally started reworking it as of ${stopwatch} ago. I promise this will be way nicer shortly! If you are here as a possible recruiter, please check out my LinkedIn and GitHub - links are in the lower corner. Thank you!`)
     }
 
@@ -52,7 +52,7 @@ export default function Start() {
                     }) : <></>}
                 </div>
                 <div className='extra-stuff'>
-                    {extra}
+                    {/* {extra} */}
                 </div>
             </div>
         </div>
