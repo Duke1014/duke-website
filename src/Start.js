@@ -8,6 +8,8 @@ export default function Start() {
     const [extra, setExtra] = useState()
     const [stopwatch, setStopwatch] = useState('')
 
+
+
     useEffect(() => {
         setInterval(timeCalc, 1000)
     }, [])
