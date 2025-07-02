@@ -1,11 +1,12 @@
-import BackButton from '../components/BackButton'
+import React from 'react'
 
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
-import gmail from '../assets/gmail.png'
-import resume from '../assets/Duke Norsworthy Resume.pdf'
+import linkedin from './img/linkedin.png'
+import github from './img/github.png'
+import gmail from './img/gmail.png'
 
-export default function Contact({ setCurrentSection }) {
+import resume from './assets/Duke Norsworthy Resume.pdf'
+
+export default function Contact() {
     return (
         <div className='contact' id='contact'>
             <div className='contact-banner'>
@@ -25,7 +26,6 @@ export default function Contact({ setCurrentSection }) {
                     RESUME
                 </a>    
             </div>
-            <BackButton setCurrentSection={ setCurrentSection }/>   
         </div>
     )
 }

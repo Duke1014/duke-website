@@ -1,25 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import gremlin from './assets/a gremlin.jpg'
-
-import Start from './pages/Start'
-import Projects from './pages/Projects'
-import About from './pages/About'
-import Contact from './pages/Contact'
+import Start from './Start'
+// import Projects from './Projects'
+// import About from './About'
+// import Contact from './Contact'
 
 export default function Home() {
 
-  const [currentSection, setCurrentSection] = useState("Start")
-    
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsVisible(true)
+    }, 4000)
+    return () => clearTimeout(timeout);
+  }, [])
+
   return (
     <div className='home'>
-      <div className='my-image-container' >
-        <img src={gremlin} alt='Duke' className='my-image'/>
-      </div>
-      {currentSection === "Start" && <Start setCurrentSection={setCurrentSection} />}
-      {currentSection === "About" && <About setCurrentSection={setCurrentSection} />}
-      {currentSection === "Projects" && <Projects setCurrentSection={setCurrentSection} />}
-      {currentSection === "Contact" && <Contact setCurrentSection={setCurrentSection} />}
+      <Start />
+        {/* <div style={{height: "1000vh"}}></div> */}
+      {isVisible ? <>
+        {/* <About />
+        <Projects />
+        <Contact /> */}
+      </> : <></>}
     </div>
   )
 }
