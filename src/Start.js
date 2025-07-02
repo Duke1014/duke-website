@@ -1,59 +1,53 @@
-import { useEffect, useState } from 'react'
+import StartImages from './StartImages'
 import gremlin from './img/a gremlin.jpg'
-import { text } from './DukeText.js'
 
 export default function Start() {
 
-    const [dukeText, setDukeText] = useState(text.greetings)
+    // const [hoveredText, setHoveredText] = useState(null)
 
-    const [stopwatch, setStopwatch] = useState('')
+    // const handleHover = (type) => {
+    //     setHoveredText(type)
+    // }
+    // const handleMouseOut = () => {
+    //     setHoveredText(null)
+    // }
 
-    useEffect(() => {
-        setInterval(timeCalc, 1000)
-    }, [])
-
-    const timeCalc = () => {
-        let workDate = new Date(2025, 5, 23)
-
-        workDate.setHours(0)
-        let today = new Date()
-
-        let calc = Math.abs(today - workDate)
-        let dayCalc = calc / 86400000 
-        let days = Math.floor(dayCalc)
-        let hourCalc = dayCalc - days
-        let hours = hourCalc * 24
-        let minCalc = hours - Math.floor(hours)
-        let mins = minCalc * 60
-        let secCalc = mins - Math.floor(mins)
-        let secs = secCalc * 60
-        setStopwatch(`${days} days, ${Math.floor(hours)} hours, ${Math.floor(mins)} minutes, and ${Math.floor(secs)} seconds`) 
-    }
-
-    const handleResponseButton = (e) => {
-        console.log(e)
-        setDukeText(`Sorry friend. I started rebuilding this site to look WAY better than it did before - like literally started reworking it as of ${stopwatch} ago. I promise this will be way nicer shortly! If you are here as a possible recruiter, please check out my LinkedIn and GitHub - links are in the lower corner. Thank you!`)
-    }
+    // const scrollTimer = () => {
+    //     // window.setInterval(function, milliseconds);
+    //     // setTimeout(function, milliseconds)
+    //     // clearTimeout(myVar);
+    // }
 
     return (
-        <div>
-            <div className='duke-talk-container'>
-                <div className='duke-talk'>
-                    <div className='my-image-container' >
-                        <img src={gremlin} alt='Duke' className='my-image'/>
-                    </div>
-                    <div className='duke-text'>
-                        {dukeText.duketext ? dukeText.duketext : dukeText}
-                    </div>
+        <div className='start' id='start'>
+            <div className='start-text'>
+                <div className='slide-in start-one'>
+                    <p>
+                        Hello, my name is Duke.
+                    </p>
                 </div>
-                <div className='responses'>
-                    {dukeText.responses ? dukeText.responses.map((value, key) => {
-                        return <button type='button' key={key} onClick={handleResponseButton}>{value}</button>
-                    }) : <></>}
+                <div className='slide-in start-two'>
+                    <p>
+                        I am a:<br/>
+                        <span className='start-software-engineer' 
+                            // onMouseOut={handleMouseOut} 
+                            // onMouseOver={() => handleHover('se') }
+                        >
+                        <i className="fa-solid fa-code">
+                        </i> software engineer</span><br/>
+                        {/* <span className='start-game-developer' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('gd')}><i className="fa-solid fa-gamepad"></i> game developer</span><br/> */}
+                        {/* <span className='start-musician' onMouseOut={handleMouseOut} onMouseOver={() => handleHover('mm')}><i className="fa-solid fa-music"></i> musician</span><br/> */}
+                    </p>
                 </div>
-                <div className='extra-stuff'>
-                    This is where extra images or project info would go
+                <StartImages 
+                    // hoveredText={hoveredText} 
+                />
+                <div className='about-start phase-in'>
+                    <p>My passion is to bring incredible experiences and unique improvements to people's lives.</p>
                 </div>
+            </div>
+            <div className='my-image-container'>
+                <img src={gremlin} alt='Duke' className='my-image' />
             </div>
         </div>
     )

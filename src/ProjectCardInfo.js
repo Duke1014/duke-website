@@ -12,7 +12,7 @@ export default function ProjectCardInfo() {
                             <div className='project-title-container'>
                                 <div className='project-card-title'>
                                     <p id='title'>Lore Map</p>
-                                    <p id='skills-title'>Skills Utilized:</p>
+                                    <p id='skills-title'>Skills uitilized:</p>
                                     <p id='skills'>Javascript/React, Google Firebase, Tailwind CSS, Photoshop</p>
                                 </div>
                             </div>
