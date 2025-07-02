@@ -16,7 +16,7 @@ export const text = {
         ]
     },
     "I just scanned your QR code.": {
-        duketext: "Thank you so much for trusting a stranger's QR code.",
+        duketext: "Thank you so much for trusting a stranger's QR code. I'd love for you to see more info about myself!",
         responses: [
             "About Me",
             "Recent Projects",
@@ -24,14 +24,11 @@ export const text = {
         ]
     },
     "I'm just such a huge fan! 😍": {
-        duketext: "Amazing! Let me help you with some more info about myself.",
+        duketext: "Gosh, you flatterer! Here, have some info about me - even if you know all about me.",
         responses: [
             "About Me",
             "Recent Projects",
             "Contact Information and Links"
         ]
     },
-    'about': {
-
-    }
 }
