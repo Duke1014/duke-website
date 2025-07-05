@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c095ab5.css",
+    "main.js": "/static/js/main.807eb34e.js",
+    "static/media/csharp.png": "/static/media/csharp.d8e9a9289dcc76d931b9.png",
+    "static/media/flstudio.png": "/static/media/flstudio.92aeade6123aceea36d9.png",
+    "static/media/css.png": "/static/media/css.19c8605d6b2861f5fbe0.png",
+    "static/media/ruby.png": "/static/media/ruby.29070ddde922e3e4f215.png",
+    "static/media/Duke Norsworthy Resume.pdf": "/static/media/Duke Norsworthy Resume.a494548671a3d89757ea.pdf",
+    "static/media/rails.png": "/static/media/rails.07fc7b058f8319ad3392.png",
+    "static/media/a gremlin.jpg": "/static/media/a gremlin.b3a43a0fe4b63b1bab0f.jpg",
+    "static/media/react.png": "/static/media/react.cb8eb5382169e3b8499d.png",
+    "static/media/tailwind.png": "/static/media/tailwind.9421383bb42bf92bb018.png",
+    "static/media/ShardsOfDalaya.png": "/static/media/ShardsOfDalaya.ab30ec994e4d2bdca34a.png",
+    "static/media/tortoisesvn.png": "/static/media/tortoisesvn.424fee24f453e6a0e25d.png",
+    "static/media/lua.png": "/static/media/lua.940178d11dc333b867ac.png",
+    "static/media/git.png": "/static/media/git.1ab3caa3101c9c9a49b5.png",
+    "static/media/javascript.png": "/static/media/javascript.7f8751632b42a9932c15.png",
+    "static/media/node.png": "/static/media/node.31c0e97d5776c294d370.png",
+    "static/media/postgresql.png": "/static/media/postgresql.f51f1b052367b7cb4b01.png",
+    "index.html": "/index.html",
+    "main.3c095ab5.css.map": "/static/css/main.3c095ab5.css.map",
+    "main.807eb34e.js.map": "/static/js/main.807eb34e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c095ab5.css",
+    "static/js/main.807eb34e.js"
+  ]
+}

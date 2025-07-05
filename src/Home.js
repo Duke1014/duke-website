@@ -10,9 +10,7 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(true)
-    }, 4000)
+    const timeout = setTimeout(() => {setIsVisible(true)}, 4000)
     return () => clearTimeout(timeout);
   }, [])
 

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import linkedin from './img/linkedin.png'
 import github from './img/github.png'
 import gmail from './img/gmail.png'
