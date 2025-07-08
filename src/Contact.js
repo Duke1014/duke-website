@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-import linkedin from './img/linkedin.png'
-import github from './img/github.png'
-import gmail from './img/gmail.png'
-
->>>>>>> 6afdf8139e402bb67e919fea0ec472e9ab16b777
 import resume from './assets/Duke Norsworthy Resume.pdf'
 
 export default function Contact() {

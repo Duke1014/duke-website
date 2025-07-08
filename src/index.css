@@ -26,41 +26,6 @@ body {
   position: relative;
 }
 
-<<<<<<< HEAD
-=======
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 3em;
-  border-bottom: 1px solid rgb(90, 245, 250);
-  background-color: rgba(3,13,34,255);
-  z-index: 999;
-  animation: name-slide 1.5s forwards;
-  animation-delay: 3s;
-  top: -15rem;
-  position: relative;
-}
-
-.my-name {
-  float: left;
-  display: flex;
-  font-size: 1.5em;
-  margin-left: 1rem
-}
-
-.menu-button {
-  margin-right: 1rem;
-}
-.menu-stuff-one, .menu-stuff-two, .menu-stuff-three {
-  background-color: white;
-  height: .2em;
-  width: 1.2em;
-  margin: .15em;
-}
-
->>>>>>> 6afdf8139e402bb67e919fea0ec472e9ab16b777
 @keyframes name-slide {
   0% {
     top: -25rem;
@@ -86,7 +51,6 @@ nav {
   margin: 0 5% 0 5%;
 }
 
-<<<<<<< HEAD
 .start-one, .start-two {
   text-align: center;
   position: relative;
@@ -106,10 +70,6 @@ nav {
   animation: phase-in 1s forwards;
   animation-delay: 3s;
   opacity: 0;
-=======
-.start-one .start-two {
-  font-size: xx-large;
->>>>>>> 6afdf8139e402bb67e919fea0ec472e9ab16b777
 }
 
 .start-img img {
