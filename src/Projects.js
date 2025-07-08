@@ -6,9 +6,9 @@ export default function Projects() {
         <div className='project-banner'>
             Projects
         </div>
-        <div>
+        {/* <div>
             <ProjectCardInfo />
-        </div>
+        </div> */}
     </div>
   )
 }
