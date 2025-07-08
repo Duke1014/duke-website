@@ -1,3 +1,4 @@
+import Contact from './Contact'
 import gremlin from './img/a gremlin.jpg'
 
 export default function Start() {
@@ -8,12 +9,12 @@ export default function Start() {
                 <div className='my-image-container'>
                     <img src={gremlin} alt='Duke' className='my-image' />
                 </div>
-                <div className='slide-in start-one'>
+                <div className='start-one'>
                     <p>
                         Hello, my name is Duke.
                     </p>
                 </div>
-                <div className='slide-in start-two'>
+                <div className='start-two'>
                     <p>
                         I am a:<br/>
                         <span className='start-software-engineer'>
@@ -21,9 +22,10 @@ export default function Start() {
                         </span>
                     </p>
                 </div>
-                <div className='about-start phase-in'>
+                <div className='start-three'>
                     <p>My passion is to bring incredible experiences and unique improvements to people's lives.</p>
                 </div>
+                <Contact />
             </div>
         </div>
     )

@@ -20,9 +20,8 @@ export default function Home() {
     <div className='home'>
       <Start />
       {isVisible ? <>
-        <Projects />
         <About />
-        <Contact />
+        <Projects />
       </> : <></>}
     </div>
   )
