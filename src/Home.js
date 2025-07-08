@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Start from './Start'
 import Projects from './Projects'
 import About from './About'
-import Contact from './Contact'
+// import Contact from './Contact'
 
 export default function Home() {
 
