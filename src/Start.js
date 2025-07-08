@@ -2,7 +2,6 @@ import Contact from './Contact'
 import gremlin from './img/a gremlin.jpg'
 
 export default function Start() {
-
     return (
         <div className='start' id='start'>
             <div className='start-text'>
