@@ -3,9 +3,6 @@ import resume from './assets/Duke Norsworthy Resume.pdf'
 export default function Contact() {
     return (
         <div className='contact' id='contact'>
-            {/* <div className='contact-banner'>
-                Contact
-            </div> */}
             <div className='contact-buttons'>
                 <a href='https://www.linkedin.com/in/duke-norsworthy/'>
                     <i className="fa fa-linkedin-square"></i>
