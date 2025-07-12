@@ -21,7 +21,7 @@ export default function ProjectCardInfo({ title, image, info, skills, links }) {
         <div className="project-links">
             {Object.entries(links).map(([label,link], i, arr) => {
                 console.log(label, link, i, arr)
-                return <button key={i} >{label}</button> 
+                return <button key={i}><a href={link}>{label}</a></button> 
             })}
         </div>
     </div>
