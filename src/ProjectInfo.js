@@ -11,41 +11,13 @@ export const projectInfo = [
         image: "",
         info: "Capstone project: a working memory game with working database connection of users and leaderboards with high scores.",
         skills: ["TypeScript", "React", "PHP", "Game Design", "CSS", "SQL"],
-        links: {"GitHub": ""}
+        links: {"GitHub": "https://github.com/ShalinDidIt/First-web-game"}
     },
     {
         title: "Doors of Divergence",
         image: "",
         info: "",
         skills: ["JavaScript", "React", "Svelte", "Google Firebase", "SQL"],
-        links: {}
+        links: {"GitHub": "https://github.com/Duke1014/lore-map"}
     },
-    {
-        title: "",
-        image: "",
-        info: "",
-        skills: [""],
-        links: [""]
-    },
-    {
-        title: "",
-        image: "",
-        info: "",
-        skills: [""],
-        links: [""]
-    },
-    {
-        title: "",
-        image: "",
-        info: "",
-        skills: [""],
-        links: [""]
-    },
-    {
-        title: "",
-        image: "",
-        info: "",
-        skills: [""],
-        links: [""]
-    }
 ]

@@ -219,6 +219,22 @@ button:hover {
 
 /* END ABOUT SECTION */
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .project-title {
+  font-size: 3rem;
+} */
+
+.project-info, .project-skills, .project-links {
+  font-size: 2rem;
+}
+
+
 @media only screen and (min-width: 1025px) {
   .start {
     margin: 0;
