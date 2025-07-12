@@ -4,7 +4,7 @@ export const projectInfo = [
         image: "",
         info: "An Emulated EverQuest server with customized content and variety of gameplay.",
         skills: ["C++", "Lua", "Game Development and Design", "Internal Web Tool Development (JavaScript, React, PHP, Ruby on Rails)", "SQL", "Data Analytics", "Python"],
-        links: {"Website": "www.dalaya.org"}
+        links: {"Website": "https://www.dalaya.org"}
     },
     {
         title: "Memory Game",
