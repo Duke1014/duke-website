@@ -1,5 +1,5 @@
 import Contact from './Contact'
-import gremlin from './img/a gremlin.jpg'
+import gremlin from '../assets/img/a gremlin.jpg'
 
 export default function Start() {
     return (

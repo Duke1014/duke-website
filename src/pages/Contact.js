@@ -1,4 +1,4 @@
-import resume from './assets/Duke Norsworthy Resume.pdf'
+// import resume from './assets/Duke Norsworthy Resume.pdf'
 
 export default function Contact() {
     return (
@@ -13,9 +13,9 @@ export default function Contact() {
                 <a href='mailto:duke.norsworthy@gmail.com'>
                     <i className='fa fa-envelope'></i>
                 </a>
-                <a href={resume} download='Duke Norsworthy Resume.pdf' alt='Duke Norsworthy Resume'>
+                {/* <a href={resume} download='Duke Norsworthy Resume.pdf' alt='Duke Norsworthy Resume'>
                     <i className='fa fa-file-pdf-o'></i>
-                </a>    
+                </a>     */}
             </div>
         </div>
     )

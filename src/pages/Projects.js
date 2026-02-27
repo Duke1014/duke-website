@@ -1,5 +1,5 @@
-import ProjectCardInfo from './ProjectCardInfo'
-import { projectInfo } from './ProjectInfo'
+import ProjectCardInfo from '../ProjectCardInfo'
+import { projectInfo } from '../ProjectInfo'
 
 export default function Projects() {
   return (

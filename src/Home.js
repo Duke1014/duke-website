@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import Start from './Start'
-import Projects from './Projects'
-import About from './About'
+import Start from './pages/Start'
+import Projects from './pages/Projects'
+import About from './pages/About'
 // import Contact from './Contact'
 
 export default function Home() {
