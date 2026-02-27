@@ -22,6 +22,29 @@ body {
   }
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: rgba(3,13,34,255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* .navbar > .my-name {
+  
+} */
+
+.navbar > .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
 .home {
   position: relative;
   display: grid;

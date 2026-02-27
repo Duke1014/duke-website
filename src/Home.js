@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import Start from './pages/Start'
 import Projects from './pages/Projects'
 import About from './pages/About'
-// import Contact from './Contact'
+import Contact from './pages/Contact'
+import Navbar from './components/Navbar'
 
 export default function Home() {
 
@@ -16,10 +17,12 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <Navbar />
       <Start />
       {isVisible ? <>
         <About />
         <Projects />
+        <Contact />
       </> : <></>}
     </div>
   )
