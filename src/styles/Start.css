@@ -1,0 +1,103 @@
+.start {
+  display: flex; 
+  justify-content: center; 
+  /* height: 90vh; */
+  flex-wrap: wrap; 
+  margin: 10% 5% 0 5%;
+}
+
+.start-one {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.start-one, .start-two {
+  text-align: center;
+  position: relative;
+  left: -200rem; 
+  animation: slide-in 1.5s forwards;
+}
+
+.start-two {
+  animation-delay: 1s; 
+  grid-area: 2 / 1 / 3 / 3; 
+}
+
+.start-three {
+  /* width: 90vw; */
+  grid-area: 3 / 1 / 4 / 5;
+}
+
+.start-three, .my-image {
+  animation: phase-in 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+.start-img img {
+  width: 2.5rem;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+  margin-left: 1rem;
+}
+
+
+@keyframes slide-in {
+  0% {
+    left: -200rem; 
+  }
+  100% {
+    left: 0; 
+  }
+}
+
+.start-software-engineer {
+  color: rgb(0, 255, 149);
+  font-size: 4rem;
+}
+
+.invisible {
+  opacity: 0 !important;
+}
+
+.start-text {
+  /* display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center; */
+  width: clamp(20rem, 70vw, 70rem);
+  display: grid;
+  grid-template-columns: repeat(4, auto-fill);
+  grid-template-rows: repeat(4, auto-fill);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+@keyframes phase-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.my-image-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* height: 20%; */
+  justify-content: space-around;
+  grid-area: 1 / 3 / 3 / 5;
+  width: 20rem;
+}
+
+.my-image {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  position: absolute;
+  width: 100%;
+  border-radius: 20rem;
+  float: right;
+}

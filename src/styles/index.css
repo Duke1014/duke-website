@@ -47,7 +47,8 @@ body {
 
 .home {
   position: relative;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes name-slide {
@@ -67,94 +68,10 @@ body {
 
 /* BEGINNING OF START COMPONENT */ 
 
-.start {
-  display: flex; 
-  justify-content: center; 
-  height: 90vh;
-  flex-wrap: wrap; 
-  margin: 0 5% 0 5%;
-}
 
-.start-one, .start-two {
-  text-align: center;
-  position: relative;
-  left: -200rem; 
-  animation: slide-in 1.5s forwards;
-}
 
-.start-two {
-  animation-delay: 1s; 
-}
 
-.start-three {
-  width: 90vw;
-}
 
-.start-three, .my-image {
-  animation: phase-in 1s forwards;
-  animation-delay: 3s;
-  opacity: 0;
-}
-
-.start-img img {
-  width: 2.5rem;
-  opacity: 1;
-  transition: opacity 0.5s ease-out;
-  margin-left: 1rem;
-}
-
-@keyframes slide-in {
-  0% {
-    left: -200rem; 
-  }
-  100% {
-    left: 0; 
-  }
-}
-
-.start-software-engineer {
-  color: rgb(0, 255, 149);
-  font-size: 4rem;
-}
-
-.invisible {
-  opacity: 0 !important;
-}
-
-.start-text {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@keyframes phase-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.my-image-container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 20%;
-  justify-content: space-around;
-}
-
-.my-image {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  position: absolute;
-  width: 20rem;
-  border-radius: 20rem;
-  float: right;
-}
 
 /* END OF START COMPONENT */ 
 
@@ -227,6 +144,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   height: 10rem;
+  grid-area: 4 / 1 / 5 / 5;
 }
 
 .contact-buttons {
@@ -258,7 +176,7 @@ button:hover {
 }
 
 
-@media only screen and (min-width: 1025px) {
+/* @media only screen and (min-width: 1025px) {
   .start {
     margin: 0;
     align-content: center;
@@ -280,7 +198,7 @@ button:hover {
 
 @media only screen and (min-width: 600px) {
 
-}
+} */
 
 /* @media (min-width:320px)  { smartphones, portrait iPhone, portrait 480x320 phones (Android) } */
 /* @media (min-width:480px)  { smartphones, Android phones, landscape iPhone } */

@@ -1,5 +1,6 @@
 import Contact from './Contact'
 import gremlin from '../assets/img/a gremlin.jpg'
+import '../styles/Start.css'
 
 export default function Start() {
     return (
