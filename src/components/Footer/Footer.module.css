@@ -12,7 +12,7 @@
 }
 
 .copy {
-  font-size: 11px;
+  font-size: 15px;
   color: var(--text-muted);
   letter-spacing: 0.05em;
 }
@@ -24,7 +24,7 @@
 }
 
 .links a {
-  font-size: 11px;
+  font-size: 15px;
   color: var(--text-muted);
   letter-spacing: 0.08em;
   transition: color var(--transition);

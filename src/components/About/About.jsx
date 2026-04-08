@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
 import styles from './About.module.css';
+import resume from './Duke Norsworthy - Resume.pdf'
+
 
 // ── Skills — edit this array to update your skill tags ──
 const SKILLS = [
@@ -79,9 +81,9 @@ export default function About() {
                 </div>
               ))}
               <div style={{ marginTop: '2rem' }}>
-                {/* <a href="#" className="btn-ghost" style={{ fontSize: '11px' }}> */}
+                <a href={resume} className="btn-ghost" style={{ fontSize: '15px' }}>
                   Download Resume ↓
-                {/* </a> */}
+                </a>
               </div>
             </div>
           </div>

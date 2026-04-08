@@ -18,7 +18,7 @@
   background: none;
   color: var(--text-muted);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: var(--transition);
@@ -71,7 +71,7 @@
 .meta { padding: 1.5rem; }
 
 .num {
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.15em;
   color: var(--accent-pop);
   margin-bottom: 0.6rem;
@@ -88,7 +88,7 @@
 .card:hover .title { color: var(--accent); }
 
 .desc {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -97,7 +97,7 @@
 .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
 .tag {
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.1em;
   padding: 0.2rem 0.6rem;
   border: 1px solid var(--border);
@@ -134,7 +134,7 @@
 }
 .moreNote {
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 16px;
   margin-bottom: 1.25rem;
 }
 

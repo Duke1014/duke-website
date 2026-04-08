@@ -43,7 +43,7 @@
 .asideItem { margin-bottom: 2.5rem; }
 
 .asideLabel {
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent-pop);
@@ -52,7 +52,7 @@
 
 .asideValue {
   font-family: var(--font-serif);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
