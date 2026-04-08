@@ -1,0 +1,134 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.35;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 40%, transparent 100%);
+}
+
+.accentLine {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 35vh;
+  background: linear-gradient(to bottom, transparent, var(--accent-dim));
+  transform: translateX(-50%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--nav-h);
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent-pop);
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.3s forwards;
+}
+
+.name {
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  font-weight: 300;
+  line-height: 0.95;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.5s forwards;
+}
+.name em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.role {
+  font-family: var(--font-mono);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.7s forwards;
+}
+
+.cta {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.9s forwards;
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-muted);
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 1s 1.4s forwards;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--accent-dim), transparent);
+  animation: scrollPulse 2s infinite;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

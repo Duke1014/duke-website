@@ -1,0 +1,67 @@
+.about {
+  padding: 8rem 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.bio {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--text);
+}
+.bio em { color: var(--accent-pop); font-style: italic; }
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.skillTag {
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-align: center;
+  transition: var(--transition);
+}
+.skillTag:hover {
+  border-color: var(--accent-dim);
+  color: var(--accent);
+}
+
+.aside {
+  padding-left: 2rem;
+  border-left: 1px solid var(--border);
+}
+
+.asideItem { margin-bottom: 2.5rem; }
+
+.asideLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-pop);
+  margin-bottom: 0.5rem;
+}
+
+.asideValue {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+
+@media (max-width: 991px) {
+  .aside {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+    margin-top: 2rem;
+  }
+}

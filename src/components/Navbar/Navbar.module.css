@@ -1,0 +1,100 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  background: transparent;
+  transition: background var(--transition), border-bottom var(--transition);
+}
+
+.scrolled {
+  background: rgba(5, 5, 15, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem;
+}
+
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--white);
+  opacity: 1 !important;
+}
+.logo span { color: var(--accent-pop); }
+
+.links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color var(--transition);
+  opacity: 1 !important;
+}
+.links a:hover,
+.links .active { color: var(--accent); }
+
+/* Hamburger */
+.toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--text);
+  transition: var(--transition);
+}
+.toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.toggle.open span:nth-child(2) { opacity: 0; }
+.toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Mobile overlay */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  top: var(--nav-h);
+  background: var(--bg);
+  z-index: 999;
+  padding: 3rem 2.5rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.mobileMenu.mobileOpen { display: flex; }
+.mobileMenu a {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text);
+  opacity: 1 !important;
+}
+
+@media (max-width: 991px) {
+  .links  { display: none; }
+  .toggle { display: flex; }
+}

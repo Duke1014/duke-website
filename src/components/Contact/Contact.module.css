@@ -1,0 +1,114 @@
+.contact {
+  padding: 8rem 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+.lead {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+
+/* ── Contact links ── */
+.links { display: flex; flex-direction: column; gap: 1px; }
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+  opacity: 1 !important;
+}
+.linkItem:first-child { border-top: 1px solid var(--border); }
+.linkItem:hover .linkLabel { color: var(--accent); }
+.linkItem:hover .linkArrow { transform: translate(3px, -3px); }
+
+.linkType {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.linkLabel {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--white);
+  transition: color var(--transition);
+}
+
+.linkArrow {
+  font-size: 1.2rem;
+  color: var(--accent-dim);
+  transition: transform var(--transition);
+}
+
+/* ── Form ── */
+.formWrapper {
+  padding: 3rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.formHeading {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-pop);
+  margin-bottom: 2rem;
+}
+
+.formGroup { margin-bottom: 1.75rem; }
+
+.label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-pop);
+  margin-bottom: 0.65rem;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 0.6rem 0;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.input:focus { border-color: var(--accent); }
+.input::placeholder { color: var(--text-muted); }
+
+.textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+.successMsg {
+  padding: 2rem 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--accent-pop);
+}
+
+.errorMsg {
+  margin-top: 1rem;
+  font-size: 12px;
+  color: #ff4e4e;
+}
+
+@media (max-width: 576px) {
+  .formWrapper { padding: 1.75rem; }
+}
