@@ -180,3 +180,60 @@ img { display: block; max-width: 100%; }
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 20px;
+    line-height: 1.9;
+  }
+
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .section-label {
+    font-size: 15px !important;
+  }
+
+  .section-title {
+    font-size: clamp(2.6rem, 8vw, 3.8rem) !important;
+  }
+
+  .hero .role,
+  .role,
+  .lead,
+  .desc,
+  .copy,
+  .label,
+  .linkType,
+  .formHeading,
+  .successMsg,
+  .errorMsg,
+  .btn-primary,
+  .btn-ghost,
+  .links a,
+  .skillTag,
+  .tag,
+  .asideLabel,
+  .linkArrow,
+  .scrollIndicator,
+  .input,
+  .textarea {
+    font-size: 1rem !important;
+  }
+
+  .linkLabel {
+    font-size: 1.6rem !important;
+  }
+
+  .asideValue,
+  .title {
+    font-size: 1.15rem !important;
+  }
+
+  .scrollIndicator {
+    font-size: 14px !important;
+  }
+}
+

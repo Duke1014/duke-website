@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.inner}>
           <p className={styles.copy}>
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Duke Norsworthy. All rights reserved.
           </p>
           <ul className={styles.links}>
             <li><a href="#about">About</a></li>
