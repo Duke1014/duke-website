@@ -52,7 +52,7 @@ export default function About() {
             <p className={styles.bio}>
               Hi, I'm <em>Duke</em>. I'm a software engineer with a passion
               for <em>web and game development</em>. I strive to bring <em>lasting 
-              solutions</em> to users that makes their day <em>better and brighter</em>.
+              solutions</em> to users that make their day <em>better and brighter</em>.
             </p>
             <br />
             <p className={styles.bio}>
