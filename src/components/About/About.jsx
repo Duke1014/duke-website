@@ -14,7 +14,7 @@ const FACTS = [
   { label: 'Location',     value: 'New York City' },
   { label: 'Availability', value: 'Open to opportunities' },
   { label: 'Experience',   value: '7+ years' },
-  { label: 'Current Work',    value: 'AWS Cloud Practitioner Certifications' },
+  { label: 'Current Work',    value: 'AWS Cloud Certifications' },
 ];
 
 function useReveal() {
