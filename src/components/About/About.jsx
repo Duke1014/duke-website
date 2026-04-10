@@ -81,7 +81,7 @@ export default function About() {
               ))}
               <div style={{ marginTop: '2rem' }}>
                 <a href={resume} className="btn-ghost" style={{ fontSize: '15px' }}>
-                  Download Resume ↓
+                  View Resume ↓
                 </a>
               </div>
             </div>
