@@ -56,13 +56,12 @@ export default function About() {
             </p>
             <br />
             <p className={styles.bio}>
-              My background in music, entertainment, gaming, and retail bring a user-focused
+              My background in Jazz and Folk music, entertainment, gaming, and retail bring a user-focused
               to all my work. I thrive with like-minded teams and bring scalable solutions 
               in my suite of stacks. 
             </p>
             <p className={styles.bio}>
-              I am currently working on an AWS Cloud Practitioner certificate, as well as 
-              an AWS Solutions Architect certificate.
+              I am currently working on AWS Cloud certifications: Cloud Practioner, Solutions Architect, DevOps.
             </p>
             <div className={styles.skillsGrid}>
               {SKILLS.map((skill) => (
